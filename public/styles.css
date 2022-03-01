@@ -26,6 +26,10 @@ header{
     margin-right: 10px;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
 
 .corpo{
     max-width: 960px;  
@@ -128,13 +132,16 @@ header{
 }
 
 .card{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
     margin: 10px auto;
     padding: 5px;
     cursor: pointer;
 }
 
 .card_imagem img{
-    width: 300px;
+    width: 340px;
     height: 140px;
     border-radius: 15px;
 }
@@ -152,8 +159,10 @@ header{
 
 
 /*=== PÁGINA SOBRE===*/
+
 .textos{
-    padding: 30px 200px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 .textos h1, h2, h3{
