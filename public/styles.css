@@ -14,7 +14,7 @@
 
 body{
     background: var(--corWhite);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 }
 
 
@@ -26,7 +26,7 @@ header{
     margin-right: 10px;
 }
 
-img{
+.cards img{
     display: block;
     max-width: 100%;
 }
@@ -38,6 +38,7 @@ img{
 
 .links{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -45,8 +46,8 @@ img{
 .imagemLogo{
     padding-right: 50px;
     padding: 10px;
+    margin-right: 20%;
 }
-
 
 .nav a{
     text-decoration: none;
@@ -85,7 +86,7 @@ img{
     background-color: #f9dada;
     max-width: 58.75em;
     max-height: 33em;
-    padding: 3em 0.25em;
+    padding: 4em 0.25em;
     border-radius: 30px;
     padding-bottom: 1px;
     margin-top: 36px;
@@ -175,6 +176,32 @@ img{
     font-size: 18px;
 }
 
+/* PÁGINA DE LOGIN */
+
+.login {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 45vh;
+    background-color: beige;
+}
+
+.login h1{
+    font-size: 2.5em;
+}
+
+.login input{
+    padding: 20px 14em;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+}
+
+.email{
+    background-color: rgba(0, 255, 255, 0.37);
+}
+
+.senha{
+    background-color: aquamarine;
+}
 /*==== MODAL OVERLAY ====*/
 
 .modal_overlay{
