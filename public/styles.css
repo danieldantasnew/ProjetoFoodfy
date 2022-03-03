@@ -78,6 +78,33 @@ header{
     width: 100%;
     transition:  width 200ms ease-in-out 0.1s;
 }
+
+/* PARTE DE BUSCA DA NAV */
+.organizabusca{
+    margin-left: 10%;
+}
+
+.busca::placeholder{
+    font-size: 14px;
+}
+
+.busca{
+    padding-left: 4px;
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: white;
+    outline: rgba(0, 0, 0, 0.418) 1px solid;
+}
+
+.botaoEnter{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--roxo);
+    color: white;
+    font-weight: bold;
+}
+
 /* === PRIMEIRO LAYOUT === */
 
 .layout{
@@ -216,12 +243,13 @@ header{
 }
 
 #subopc{
+    color: var(--roxo);
     font-size: 1.1em;
     font-weight: 500;
 }
 
 #subopc a:hover{
-    color: black;
+    color: var(--roxo);
     font-weight: bold;
 }
 
@@ -239,29 +267,7 @@ header{
     font-size: 1em;
 }
 
-.organizabusca{
-    margin-left: 10%;
-}
 
-.busca::placeholder{
-    font-size: 14px;
-}
-.busca{
-    padding-left: 4px;
-    height: 35px;
-    width: 200px;
-    border-radius: 5px;
-    background-color: white;
-    outline: rgba(0, 0, 0, 0.418) 1px solid;
-}
-
-.botaoEnter{
-    padding: 10px;
-    border-radius: 5px;
-    background-color: var(--roxo);
-    color: white;
-    font-weight: bold;
-}
 /*==== MODAL OVERLAY ====*/
 
 .modal_overlay{
