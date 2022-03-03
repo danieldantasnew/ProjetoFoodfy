@@ -179,28 +179,51 @@ header{
 /* PÁGINA DE LOGIN */
 
 .login {
-    text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 45vh;
-    background-color: beige;
+    width: 400px;
+    height: 400px;
+    margin: 80px auto;
+    margin-bottom: 40vh;
 }
 
 .login h1{
+    text-align: center;
     font-size: 2.5em;
 }
 
-.login input{
-    padding: 20px 14em;
-    border-radius: 5px;
-    background-color: #EEEEEE;
-}
-
-.email{
-    background-color: rgba(0, 255, 255, 0.37);
+.login h2{
+    font-size: 21px;
 }
 
 .senha{
-    background-color: aquamarine;
+    margin-bottom: 6vh;
+}
+
+.entrada{
+    padding: 15px 100px;
+    border-radius: 5px;
+}
+
+.outrasopc{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.outrasopc a{
+    text-align: left;
+    padding-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.botao{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #f9dada;
 }
 /*==== MODAL OVERLAY ====*/
 
