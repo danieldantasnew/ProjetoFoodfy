@@ -9,6 +9,7 @@
 
 :root{
     --corWhite: rgba(255, 255, 255, 0.6);
+    --roxo: #0307ebab;
 }
 
 
@@ -66,7 +67,7 @@ header{
 .nav a::after{
     width: 0;
     content: '';
-    background-color: black;
+    background-color: var(--roxo);
     height: 2px;
     bottom: 0px;
     left: 0;
@@ -180,50 +181,86 @@ header{
 
 .login {
     width: 400px;
-    height: 400px;
-    margin: 80px auto;
+    height: 520px;
+    margin: 14vh auto;
     margin-bottom: 40vh;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.151);
 }
 
 .login h1{
-    text-align: center;
+    padding-top: 20px;
     font-size: 2.5em;
 }
 
 .login h2{
+    margin-left: 4%;
+    text-align: left;
     font-size: 21px;
 }
 
-.senha{
-    margin-bottom: 6vh;
+.login a{
+    margin: 10px auto;
+    text-decoration: none;
+    color: rgb(63, 60, 60);
 }
 
 .entrada{
-    padding: 15px 100px;
+    padding-left: 2%;
+    width: 370px;
+    height: 40px;
     border-radius: 5px;
+    outline: rgba(0, 0, 0, 0.404) 1px solid;
+    font-size: 1em;
 }
 
-.outrasopc{
-    display: flex;
-    justify-content: left;
-    align-items: center;
+#subopc{
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
-.outrasopc a{
-    text-align: left;
-    padding-right: 30px;
-    text-decoration: none;
+#subopc a:hover{
     color: black;
+    font-weight: bold;
 }
-
 
 .botao{
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    padding: 15px 20px;
+    margin: 30px auto;
+    padding: 15px 100px;
     border-radius: 5px;
-    background-color: #f9dada;
+    background-color: var(--roxo);
+    color: white;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.entrada::placeholder{
+    font-size: 1em;
+}
+
+.organizabusca{
+    margin-left: 10%;
+}
+
+.busca::placeholder{
+    font-size: 14px;
+}
+.busca{
+    padding-left: 4px;
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: white;
+    outline: rgba(0, 0, 0, 0.418) 1px solid;
+}
+
+.botaoEnter{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--roxo);
+    color: white;
+    font-weight: bold;
 }
 /*==== MODAL OVERLAY ====*/
 
