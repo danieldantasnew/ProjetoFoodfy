@@ -45,7 +45,6 @@ header{
 
 
 .imagemLogo{
-    padding-right: 50px;
     padding: 10px;
     margin-right: 20%;
 }
@@ -56,6 +55,7 @@ header{
     padding: 10px;
     font-size: 20px;
     position: relative;
+    margin: auto;
 }
 
 .nav a:hover{
@@ -282,8 +282,8 @@ header{
 
 .modal{
     background-color: rgb(255, 255, 255);
-    width: 660px;
-    height: 413px;
+    width: 450px;
+    height: 600px;
     margin: 25vh auto;
     position: relative;
     border-radius: 10px;
@@ -297,7 +297,7 @@ header{
     display: block;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 30px;
+    bottom: 3px;
     font-size: 16px;
 }
 
@@ -305,12 +305,8 @@ header{
 
 
 .modal_conteudo img{
-    width: 600px;
-    height: 200px;
-    border-radius: 15px;
-    position: absolute;
-    top: 20px;
-    left: 30px;
+    max-width: 100%;
+    border-radius: 5px 5px 0px 0px;
 }
 
 
@@ -321,27 +317,40 @@ header{
     opacity: 1;
 }
 
+.titulosModal{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .titulosModal h1{
-    position: absolute;
-    top: 55%;
-    margin-left: 50%;
-    margin-top: 15px;
-    transform: translateX(-50%);
     font-weight: bold;
     font-size: 24px;
+    margin: 0;
 }
 
-.titulosModal p{
-    position: absolute;
-    line-height: 28px;
-    top: 65%;
-    margin-left: 50%;
-    margin-top: 5px;
-    transform: translateX(-50%);
-    border-radius: 10px;
-    background-color: #EEEEEE;
+.ingredientes{
+    padding-left: 10px;
 }
 
+ul{
+    list-style: none;
+}
+
+.modal_detalhes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalhes{
+    margin-right: 10px;
+}
+
+#rend{
+    margin-top: -15px;
+}
 /* === RODAPÉ === */
 
 .rodape{
