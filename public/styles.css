@@ -492,11 +492,20 @@ ul{
     .form h2{
         font-size: 1.2em;
     }
+
+    .mensagem h2{
+        font-size: 1.2em;
+    }
+
     .mensagem input{
         width: 100%;
         height: 250px;
     }
     
+    .botao-2{
+        padding: 15px 25px;
+        font-size: 0.9em;
+    }
 }
 /*==== MODAL OVERLAY ====*/
 
