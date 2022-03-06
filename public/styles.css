@@ -51,8 +51,12 @@ ul{
 }
 
 
-.imagemLogo{
-    padding: 10px;
+.Logo a{
+    padding: 10px 10px 10px 0px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color:var(--roxo);
+    font-weight: bold;
 }
 
 .nav a{
@@ -284,7 +288,7 @@ ul{
 }
 
 /*HORÁRIO */
-.content-horario{
+.content-whatsapp{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,17 +300,17 @@ ul{
     margin: 10px;
 }
 
-.content-horario h3{
+.content-whatsapp h3{
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 1em;
 }
 
-.content-horario p{
+.content-whatsapp  p{
     font-size: 0.9em;
 }
 
-.content-horario img{
+.content-whatsapp  img{
     margin-top: 40px;
     width: 45px;
     height: 45px;
@@ -314,7 +318,7 @@ ul{
 
 /* ENDEREÇO */
 
-.content-endereco{
+.content-email{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,17 +330,17 @@ ul{
     margin: 10px;
 }
 
-.content-endereco h3{
+.content-email h3{
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 1em;
 }
 
-.content-endereco p{
+.content-email p{
     font-size: 0.9em;
 }
 
-.content-endereco img{
+.content-email img{
     margin-top: 40px;
     width: 45px;
     height: 45px;
@@ -372,16 +376,16 @@ ul{
     font-size: 0.9em;
 }
 
-.contatoeconsulta{
+.contatoesug{
     margin: 9em auto;
 }
 
-.contatoeconsulta h1{
+.contatoesug h1{
     font-weight: 900;
     font-size: 2em;
 }
 
-.contatoeconsulta input{
+.contatoesug input{
     outline: rgba(0, 0, 0, 0.404) 1px solid;
     background-color: var(--roxo-light-2);
     width: 460px;
@@ -493,6 +497,10 @@ ul{
     margin-top: -15px;
 }
 /* === RODAPÉ === */
+
+sup{
+    font-size: 0.4em;
+}
 .bg-footer{
     background-color: var(--roxo-light);
     margin-top: 5%;
@@ -504,6 +512,7 @@ ul{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     max-width: 960px;
+    padding-left: 10px;
     color: var(--corWhite);
 }
 
