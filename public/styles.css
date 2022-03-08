@@ -11,8 +11,8 @@
     --corWhite: white;
     --padrao: #F58F29;
     --padrao-dark: #ff8408;
-    --padrao-light: #fc8b1ac9;
-    --padrao-light-2: #ffc58b;
+    --padrao-light: #fc8b1afa;
+    --padrao-light-2: #ffca94f1;
 }
 
 
@@ -602,8 +602,40 @@ sup{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     max-width: 960px;
-    padding-left: 10px;
+    padding-left: 2%;
     color: var(--corWhite);
+    text-align: left;
+}
+
+.footer-content li{
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: var(--corWhite);
+}
+
+.footer-content h3{
+    padding-left: 10px;
+}
+
+.sobrefoodfy h3{
+    padding-left: 0px;
+}
+
+.sobrefoodfy h4{
+    margin-top: 20px;
+}
+
+.sobrefoodfy p{
+    line-height: 1.4em;
+}
+
+.linksacesso{
+    margin-left: 30px;
 }
 
 .rodape{
