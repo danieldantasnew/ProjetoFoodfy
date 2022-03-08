@@ -89,6 +89,15 @@ ul{
     transition:  width 200ms ease-in-out 0.1s;
 }
 
+.logar{
+    display: flex;
+}
+
+.logar img{
+    background-color: #F58F29;
+    border-radius: 50%;
+    padding: 10px;
+}
 /* PARTE DE BUSCA DA NAV */
 
 .busca::placeholder{
@@ -98,7 +107,7 @@ ul{
 .busca{
     padding-left: 4px;
     height: 35px;
-    width: 200px;
+    width: 300px;
     border-radius: 5px;
     background-color: white;
     outline: rgba(0, 0, 0, 0.418) 1px solid;
@@ -112,13 +121,18 @@ ul{
     font-weight: bold;
 }
 
-@media (max-width: 800px){
+@media (max-width: 880px){
 
     .links{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .logar{
+        display: none;
+        /*medida temporária até conseguir alinhar corretamente o login em telas menores*/
     }
 
     .nav{
@@ -262,7 +276,7 @@ ul{
 }
 
 .textos h1, h2, h3{
-    font-size: 24px;
+    font-size: 1.5em;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -452,6 +466,7 @@ ul{
     width: 100%;
     height: 50px;
     border-radius: 10px;
+    font-size: 1.3em;
 }
 
 .form{
@@ -463,6 +478,7 @@ ul{
 .mensagem input{
     width: 100%;
     height: 250px;
+    /*descobrir como alinhar o texto em balões maiores*/
 }
 
 .botao-2{
