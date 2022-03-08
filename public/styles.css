@@ -146,6 +146,10 @@ ul{
         margin-left: 5px;
         margin-right: 10px;
     }
+
+    .subtitulo{
+        margin-left: 5px;
+    }
 }
 
 /* === PRIMEIRO LAYOUT === */
@@ -628,10 +632,22 @@ sup{
 
 .sobrefoodfy h4{
     margin-top: 20px;
+    font-size: 1.4em;
 }
 
 .sobrefoodfy p{
     line-height: 1.4em;
+}
+
+.redesocial{
+    display: flex;
+    justify-content: flex-start;
+    justify-self: left;
+    margin-top: 20px;
+}
+
+.redesocial a{
+    padding: 10px 10px 10px 0px;
 }
 
 .linksacesso{
@@ -647,5 +663,24 @@ sup{
     font-size: 14px;
 }
 
+@media (max-width: 800px){
+    .bg-footer{
+        background-color: var(--padrao-light);
+        margin-top: 5%;
+        height: 105vh;
+    }
 
+    .sobrefoodfy{
+        padding-left: 10px;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linksacesso{
+        margin-left: 0px;
+    }
+}
 
