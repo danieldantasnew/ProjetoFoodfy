@@ -18,21 +18,28 @@
     --corWhite: white;
     --corpo: rgba(255, 255, 255, 0.6);
     --letras-light: black;
+    --bordas-light: rgba(0, 0, 0, 0.274);
+    --inverte-light: white;
 
     /* MODO DARK */
     --corpo-dark: #24292E;
     --letras-dark: white;
-    
+    --bordas-dark: rgba(255, 255, 255, 0.26);
+    --inverte-dark: #24292E;
 }
 
 .tema-claro{
     --planodefundo: var(--corpo);
     --textos: var(--letras-light);
+    --bordas: var(--bordas-light);
+    --inverte: var(--inverte-light);
 }
 
 .tema-escuro{
     --planodefundo: var(--corpo-dark);
     --textos: var(--letras-dark);
+    --bordas: var(--bordas-dark);
+    --inverte: var(--inverte-dark);
 }
 
 body{
@@ -138,7 +145,7 @@ a{
     width: 300px;
     border-radius: 5px;
     background-color: var(--planodefundo);
-    outline: var(--textos) 1px solid;
+    outline: var(--bordas) 1px solid;
 }
 
 .botaoEnter{
@@ -403,6 +410,10 @@ a{
 
 /* PÁGINA DE LOGIN */
 
+.login1{
+    color: var(--textos);
+}
+
 .login {
     width: 400px;
     height: 520px;
@@ -410,7 +421,7 @@ a{
     margin-bottom: 40vh;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.151);
+    box-shadow: 0px 0px 1px 1px var(--bordas);
 }
 
 .login h1{
@@ -442,6 +453,7 @@ a{
 #subopc a{
     font-size: 1.1em;
     font-weight: normal;
+    color: var(--textos);
 }
 
 #subopc a:hover{
@@ -654,12 +666,13 @@ a{
 }
 
 .modal{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--inverte);
     width: 450px;
     height: 600px;
     margin: 25vh auto;
     position: relative;
     border-radius: 10px;
+    color: var(--textos);
 }
 
 
