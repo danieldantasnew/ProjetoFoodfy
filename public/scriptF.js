@@ -1,5 +1,21 @@
 const modalOverlay = document.querySelector(".modal_overlay");
 const cards = document.querySelectorAll(".card");
+const switcher = document.querySelector(".botao-1");
+
+switcher.addEventListener('click', function(){
+    document.body.classList.toggle('tema-escuro');
+
+    var className = document.body.className;
+
+
+    if(className == "tema-claro"){
+        this.textContent = "Escuro";
+    }
+
+    else{
+        this.textContent = "Claro";
+    }
+});
 
 for (let card of cards){
     card.addEventListener("click", function(){

@@ -8,29 +8,52 @@
 }
 
 :root{
-    --corWhite: white;
+    /*CORES PADRÃO */
     --padrao: #F58F29;
     --padrao-dark: #ff8408;
     --padrao-light: #fc8b1afa;
     --padrao-light-2: #ffca94f1;
+
+    /* MODO LIGHT*/
+    --corWhite: white;
+    --corpo: rgba(255, 255, 255, 0.6);
+    --letras-light: black;
+
+    /* MODO DARK */
+    --corpo-dark: #24292E;
+    --letras-dark: white;
+    
 }
 
+.tema-claro{
+    --planodefundo: var(--corpo);
+    --textos: var(--letras-light);
+}
+
+.tema-escuro{
+    --planodefundo: var(--corpo-dark);
+    --textos: var(--letras-dark);
+}
 
 body{
-    background: rgba(255, 255, 255, 0.6);
+    background: var(--planodefundo);
     font-family: 'Roboto', sans-serif; 
 }
 
 header{
     /*position: fixed; olhar o video sobre a position fixed*/
     padding-top: 20px;
-    background-color: var(--corWhite);
+    background-color: var(--planodefundo);
     margin-left: 10px;
     margin-right: 10px;
 }
 
 ul{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 .cards img{
@@ -61,7 +84,7 @@ ul{
 
 .nav a{
     text-decoration: none;
-    color: black;
+    color: var(--textos);
     padding: 10px;
     font-size: 20px;
     position: relative;
@@ -69,7 +92,7 @@ ul{
 }
 
 .nav a:hover{
-    color: black;
+    color: var(--textos);
     font-weight: bold;
     transition: 100ms;
 }
@@ -89,6 +112,10 @@ ul{
     transition:  width 200ms ease-in-out 0.1s;
 }
 
+.botao-1{
+    cursor: pointer;
+}
+
 .logar{
     display: flex;
 }
@@ -102,6 +129,7 @@ ul{
 
 .busca::placeholder{
     font-size: 14px;
+    color: var(--textos);
 }
 
 .busca{
@@ -109,8 +137,8 @@ ul{
     height: 35px;
     width: 300px;
     border-radius: 5px;
-    background-color: white;
-    outline: rgba(0, 0, 0, 0.418) 1px solid;
+    background-color: var(--planodefundo);
+    outline: var(--textos) 1px solid;
 }
 
 .botaoEnter{
@@ -121,13 +149,17 @@ ul{
     font-weight: bold;
 }
 
-@media (max-width: 880px){
+@media (max-width: 1000px){
 
     .links{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .botao-1{
+        display: none;
     }
 
     .logar{
@@ -242,6 +274,7 @@ ul{
 
 .card_titulo h1{
     margin: 20px auto 5px;
+    color: var(--textos);
 }
 
 
@@ -249,6 +282,7 @@ ul{
     border-radius: 10px;
     width: 50%;
     height: 20px;
+    color: var(--textos);
 }
 
 @media (max-width: 660px){
@@ -279,10 +313,12 @@ ul{
     font-size: 1.5em;
     padding-top: 50px;
     padding-bottom: 20px;
+    color: var(--textos);
 }
 
 .textos p{
     font-size: 18px;
+    color: var(--textos);
 }
 
 /*PAGINA DE RECEITAS */
@@ -290,6 +326,80 @@ ul{
 .organizareceita{
     margin: 20px;
 }
+
+.categoria ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #F58F29;
+    border-radius: 10px;
+}
+
+.categoria li{
+    padding: 10px;
+}
+
+.categoria nav{
+    padding: 20px 10px;
+}
+
+.categoria a{
+    color: var(--letras-light);
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.categoria a:hover{
+    color: var(--corWhite);
+    font-weight: bold;
+}
+
+/* PAGINA DE RECEITA CLICÁVEL*/
+
+.ham{
+    margin: 30px 10px;
+    color: var(--textos);
+}
+.ham img{
+    width: 100%;
+    height: 280px;
+}
+
+.info_card{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.textos_receitaUnica{
+    margin: 10px;
+}
+
+.textos_receitaUnica h2{
+    font-size: 2em;
+}
+
+.textos_receitaUnica p{
+    margin: 20px 0;
+    text-align: justify;
+    color: var(--textos);
+}
+
+#unico{
+    margin: 10px;
+}
+
+.lista_ingredientes{
+    font-size: 1.1em;
+    margin-left: 30px;
+}
+
+.lista_ingredientes li{
+    padding: 6px 0;
+    text-align: justify;
+    color: var(--textos);
+}
+
 
 /* PÁGINA DE LOGIN */
 
@@ -360,6 +470,10 @@ ul{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 10vh;
+}
+
+.contatos h3{
+    color: white;
 }
 
 /*HORÁRIO */
@@ -458,6 +572,7 @@ ul{
 .contatoesug h1{
     font-weight: 900;
     font-size: 2em;
+    color: var(--textos);
 }
 
 .contatoesug input{
@@ -640,6 +755,7 @@ sup{
 
 .footer-content h3{
     padding-left: 10px;
+    color: var(--corWhite);
 }
 
 .sobrefoodfy h3{
@@ -673,10 +789,11 @@ sup{
 .rodape{
     left: 0;
     text-align: center;
-    background-color: #EEEEEE;
+    background-color: var(--planodefundo);
     width: 100%;
     padding: 23px;
     font-size: 14px;
+    color: var(--textos);
 }
 
 @media (max-width: 800px){
