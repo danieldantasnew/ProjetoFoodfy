@@ -35,6 +35,18 @@ function Ftoggle(){
     const links = document.getElementById('links');
     links.classList.toggle('active');
 
+    const Logo = document.getElementById('Logo');
+    Logo.classList.toggle('active');
+
+    const organizabusca = document.getElementById('organizabusca');
+    organizabusca.classList.toggle('active');
+
+    const btnMenu = document.getElementById('btn-menu');
+    btnMenu.classList.toggle('active');
+
+    const cabeca = document.getElementById('cabeca');
+    cabeca.classList.toggle('active');
+
 }
 
 btnbotao.addEventListener('click', Ftoggle);
