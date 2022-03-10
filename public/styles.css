@@ -425,11 +425,13 @@ a{
     color: var(--letras-light);
     font-size: 0.8em;
     font-weight: 500;
+    padding: 5px;
 }
 
 .categoria a:hover{
     color: var(--corWhite);
     font-weight: bold;
+    transition: 400ms;
 }
 
 /* PAGINA DE RECEITA CLICÁVEL*/
