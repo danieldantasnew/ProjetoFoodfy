@@ -20,12 +20,14 @@
     --letras-light: black;
     --bordas-light: rgba(0, 0, 0, 0.274);
     --inverte-light: white;
+    --hover-light: var(--padrao-dark);
 
     /* MODO DARK */
     --corpo-dark: #24292E;
     --letras-dark: white;
     --bordas-dark: rgba(255, 255, 255, 0.26);
     --inverte-dark: #24292E;
+    --hover-dark: white;
 }
 
 .tema-claro{
@@ -33,6 +35,7 @@
     --textos: var(--letras-light);
     --bordas: var(--bordas-light);
     --inverte: var(--inverte-light);
+    --hover: var(--hover-light);
 }
 
 .tema-escuro{
@@ -40,6 +43,7 @@
     --textos: var(--letras-dark);
     --bordas: var(--bordas-dark);
     --inverte: var(--inverte-dark);
+    --hover: var(--hover-dark);
 }
 
 body{
@@ -47,9 +51,9 @@ body{
     font-family: 'Roboto', sans-serif; 
 }
 
-header{
-    /*position: fixed; olhar o video sobre a position fixed*/
+#cabeca{
     padding-top: 20px;
+    padding-bottom: 10px;
     background-color: var(--planodefundo);
     margin-left: 10px;
     margin-right: 10px;
@@ -73,23 +77,68 @@ a{
     margin: 0 auto; 
 }
 
-.links{
+#links{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
+#links.active{
+    gap: 20px;
+}
 
-.Logo a{
-    padding: 10px 10px 10px 0px;
+#Logo a{
+    padding: 10px 10px 10px 10px;
     font-size: 1.8em;
     text-decoration: none;
     color:var(--padrao-dark);
     font-weight: bold;
 }
 
-.nav a{
+/* BOTAO MENU */
+
+#btn-menu{
+    display: block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#btn-menu svg{
+    background-color: white;
+}
+
+.separacao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* LINKS MENU */
+
+#links-menu.active{
+    margin: 0 auto;
+    margin-top: 4vh;
+}
+/* NAV */
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navegacao{
+    display: flex;
+}
+
+
+/*NAV ACTIVE */
+
+#navegacao.active{
+    display: none;
+}
+
+.distribui a{
     text-decoration: none;
     color: var(--textos);
     padding: 10px;
@@ -98,40 +147,54 @@ a{
     margin: auto;
 }
 
-.nav a:hover{
+.distribui a:hover{
     color: var(--textos);
     font-weight: bold;
     transition: 100ms;
 }
 
-.nav a::after{
+.distribui a::after{
     width: 0;
     content: '';
-    background-color: var(--padrao-dark);
+    background-color: var(--hover);
     height: 2px;
     bottom: 0px;
     left: 0;
     position: absolute;
 }
 
-.links a:hover::after{
+.distribui a:hover::after{
     width: 100%;
     transition:  width 200ms ease-in-out 0.1s;
 }
 
-.botao-1{
+#botao-1{
+    display: none;
     cursor: pointer;
 }
 
-.logar{
-    display: flex;
+#logar{
+    display: none;
 }
 
-.logar img{
-    background-color: #F58F29;
+#logar img{    
+    background-color: var(--padrao-dark);
     border-radius: 50%;
     padding: 10px;
 }
+
+/* LOGAR ACTIVE */
+
+#botao-1.active{
+    display: block;
+    cursor: pointer;
+}
+
+#logar.active{
+    display: flex;
+
+}
+
 /* PARTE DE BUSCA DA NAV */
 
 .busca::placeholder{
@@ -142,13 +205,14 @@ a{
 .busca{
     padding-left: 4px;
     height: 35px;
-    width: 300px;
+    width: 400px;
     border-radius: 5px;
     background-color: var(--planodefundo);
     outline: var(--bordas) 1px solid;
+    color: var(--textos);
 }
 
-.botaoEnter{
+#botaoEnter{
     padding: 10px;
     border-radius: 5px;
     background-color: var(--padrao-dark);
@@ -156,29 +220,27 @@ a{
     font-weight: bold;
 }
 
+
+/* MEDIA DO MENU <<<<<<<<<<<<<<<<<<<<<*/
 @media (max-width: 1000px){
 
-    .links{
+
+    #links{
         display: flex;
-        flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: space-between;
     }
 
-    .botao-1{
-        display: none;
+    #links.active{
+        /*nada por enquanto*/
     }
 
-    .logar{
-        display: none;
-        /*medida temporária até conseguir alinhar corretamente o login em telas menores*/
-    }
-
-    .nav{
+    .distribui{
         margin: 20px auto;
     }
 
-    .nav a{
+    .distribui a{
         margin-right: 20px;
     }
     
@@ -194,7 +256,7 @@ a{
         width: 90%;
     }
 
-    .botaoEnter{
+    #botaoEnter{
         padding: 5px;
         margin-left: 5px;
         margin-right: 10px;
@@ -203,7 +265,16 @@ a{
     .subtitulo{
         margin-left: 5px;
     }
+
+    #navegacao{
+        display: none;
+    }
+
+    #navegacao.active{
+        display: flex;
+    }
 }
+
 
 /* === PRIMEIRO LAYOUT === */
 

@@ -1,21 +1,56 @@
 const modalOverlay = document.querySelector(".modal_overlay");
 const cards = document.querySelectorAll(".card");
-const switcher = document.querySelector(".botao-1");
+const dark = document.getElementById('botao-1');
 
-switcher.addEventListener('click', function(){
+const btnbotao = document.getElementById('btn-menu');
+
+function Ftoggle(){
+    /*ADICIONANDO A CLASSE ACTIVE NO HTML APÓS CLICAR NO BOTÃO MENU */
+
+    /*acessa o id*/
+    const nav = document.getElementById('nav');
+    /*adiciona ou remove a classe active no id*/
+    nav.classList.toggle('active');
+
+    /*acessa o id*/
+    const botao1 = document.getElementById('botao-1');
+    /*adiciona ou remove a classe active no id*/
+    botao1.classList.toggle('active');
+
+    /*acessa o id*/
+    const logar = document.getElementById('logar');
+    /*adiciona ou remove a classe active no id*/
+    logar.classList.toggle('active');
+
+    /*acessa o id*/
+    const navegacao = document.getElementById('navegacao');
+    /*adiciona ou remove a classe active no id*/
+    navegacao.classList.toggle('active');
+
+    /*acessa o id*/
+    const linkMenu = document.getElementById('links-menu');
+    /*adiciona ou remove a classe active no id*/
+    linkMenu.classList.toggle('active')
+
+    const links = document.getElementById('links');
+    links.classList.toggle('active');
+
+}
+
+btnbotao.addEventListener('click', Ftoggle);
+
+
+/* ALTERANDO PARA O MODO DARK-----------------------------------------*/
+
+function modoDark(){
     document.body.classList.toggle('tema-escuro');
+    
+}
 
-    var className = document.body.className;
+dark.addEventListener('click', modoDark);
 
+/* --------------------------------------------------------------------*/
 
-    if(className == "tema-claro"){
-        this.textContent = "Escuro";
-    }
-
-    else{
-        this.textContent = "Claro";
-    }
-});
 
 for (let card of cards){
     card.addEventListener("click", function(){
