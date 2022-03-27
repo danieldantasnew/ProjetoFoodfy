@@ -412,7 +412,7 @@ a{
     color: var(--textos);
 }
 
-@media (max-width: 660px){
+@media (max-width: 1000px){
     .cards{
         display: flex;
         flex-direction: column;
@@ -740,7 +740,7 @@ a{
     font-weight: 700;
 }
 
-@media (max-width: 580px){
+@media (max-width: 1000px){
 
     .contatoesug input{
         height: 35px;
