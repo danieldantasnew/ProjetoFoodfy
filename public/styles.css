@@ -224,7 +224,6 @@ a{
 /* MEDIA DO MENU <<<<<<<<<<<<<<<<<<<<<*/
 @media (max-width: 1000px){
 
-
     #cabeca.active{
         transition: 2s;
         background-color: var(--padrao-light);
@@ -344,7 +343,7 @@ a{
 }
 
 .layout img{
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .layoutTexto{
@@ -932,11 +931,11 @@ sup{
     color: var(--textos);
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .bg-footer{
         background-color: var(--padrao-light);
         margin-top: 5%;
-        height: 105vh;
+        height: 200vh;
     }
 
     .sobrefoodfy{
