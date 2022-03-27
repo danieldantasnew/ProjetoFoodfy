@@ -936,6 +936,7 @@ sup{
         background-color: var(--padrao-light);
         margin-top: 5%;
         height: 200vh;
+        /* IDENTIFICAR SE NA TELA MOBILE, APÓS AS CORREÇÕES, A ALTURA AINDA FICA GRANDE*/
     }
 
     .sobrefoodfy{
