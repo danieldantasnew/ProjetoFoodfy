@@ -960,7 +960,7 @@ sup{
     .corpo{
         max-width: 100%;
     }
-
+    
     #organizabusca{
         display: flex;
         justify-content: center;
@@ -981,7 +981,7 @@ sup{
         margin: 10px auto;
         padding: 5px;
         cursor: pointer;
-        width: 100%;
+        width: 90%;
     }
     
     .card_imagem img{
