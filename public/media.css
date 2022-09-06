@@ -63,7 +63,7 @@
         height: 0px;
         background-color: white;
         z-index: 1000;
-        transition: .12s;
+        transition: .7s;
         visibility: hidden;
         overflow-y: hidden;
     }
