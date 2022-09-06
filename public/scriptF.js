@@ -41,14 +41,20 @@ function Ftoggle(){
     const organizabusca = document.getElementById('organizabusca');
     organizabusca.classList.toggle('active');
 
-    const btnMenu = document.getElementById('btn-menu');
-    btnMenu.classList.toggle('active');
-
     const cabeca = document.getElementById('cabeca');
     cabeca.classList.toggle('active');
 
 }
+const btnMenu = document.getElementById('menu');
 
+
+const botaoMenu = document.getElementById('btn-menu');
+botaoMenu.addEventListener('click', alteraMenu);
+
+
+function alteraMenu(){
+    btnMenu.classList.toggle('active');   
+}
 btnbotao.addEventListener('click', Ftoggle);
 
 

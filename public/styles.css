@@ -52,11 +52,12 @@ body{
 }
 
 #cabeca{
-    padding-top: 20px;
-    padding-bottom: 10px;
+    height: 70px;
+    width: calc(100% - 10px);
     background-color: var(--planodefundo);
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 20px;
 }
 
 ul{
@@ -65,6 +66,25 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu > li > a{
+    padding: 10px;
+    font-size: 1.2em;
+    color: var(--letras-light);
+}
+
+#menu > li > a:hover{
+    color: var(--hover-light);
+    transition: 200ms;
+    font-weight: bold;
 }
 
 .cards img{
@@ -79,7 +99,7 @@ a{
 
 #links{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -99,101 +119,30 @@ a{
 /* BOTAO MENU */
 
 #btn-menu{
-    display: block;
+    display: none;
     cursor: pointer;
     margin-right: 10px;
+    padding: 10px;
 }
 
-#btn-menu svg{
-    background-color: white;
-}
-
-.separacao{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-/* LINKS MENU */
-
-#links-menu.active{
-    margin: 0 auto;
-    margin-top: 4vh;
-}
 /* NAV */
 
 #nav{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#navegacao{
-    display: flex;
-}
-
-
-/*NAV ACTIVE */
-
-#navegacao.active{
-    display: none;
-}
-
-.distribui a{
-    text-decoration: none;
-    color: var(--textos);
-    padding: 10px;
-    font-size: 20px;
-    position: relative;
-    margin: auto;
-}
-
-.distribui a:hover{
-    color: var(--textos);
-    font-weight: bold;
-    transition: 100ms;
-}
-
-.distribui a::after{
-    width: 0;
-    content: '';
-    background-color: var(--hover);
-    height: 2px;
-    bottom: 0px;
-    left: 0;
-    position: absolute;
-}
-
-.distribui a:hover::after{
-    width: 100%;
-    transition:  width 200ms ease-in-out 0.1s;
-}
+} 
 
 #botao-1{
     display: none;
     cursor: pointer;
 }
 
-#logar{
-    display: none;
-}
-
-#logar img{    
-    background-color: var(--padrao-dark);
-    border-radius: 50%;
-    padding: 10px;
-}
-
-/* LOGAR ACTIVE */
-
 #botao-1.active{
     display: block;
     cursor: pointer;
 }
 
-#logar.active{    
-    display: flex;
-
-}
 
 /* PARTE DE BUSCA DA NAV */
 
@@ -221,108 +170,6 @@ a{
 }
 
 
-/* MEDIA DO MENU <<<<<<<<<<<<<<<<<<<<<*/
-@media (max-width: 1000px){
-
-    #cabeca.active{
-        transition: 2s;
-        background-color: var(--padrao-light);
-        height: 100vh;
-        width: 100%;
-    }
-
-    #links.active{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        position: relative;
-    }
-    
-    #Logo.active{
-        position: absolute;
-        margin-top: 60px;
-        margin-bottom: 30px;
-    }
-
-    #Logo.active a{
-        color: white;
-    }
-    
-    #logar.active{
-        position: absolute;
-        margin-top: 160px;
-    }
-
-    #links-menu.active{
-        position: absolute;
-        margin-top: 300px;
-        left: 0;
-        text-align: left;
-    }
-
-    #botao-1.active{
-        position: absolute;
-        right: 50px;
-        top: 6px;
-    }
-
-    #btn-menu.active{
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .distribui{
-        margin: 20px auto;
-    }
-
-    .distribui a{
-        margin-right: 20px;
-    }
-    
-    #organizabusca{
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
-        margin-left: 5px;
-        margin-right: 10px;
-    }
-
-    #organizabusca.active{
-        display: none;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 10px;
-    }
-
-    .busca{
-        width: 80%;
-    }
-
-    #botaoEnter{
-        padding: 5px;
-        margin-left: 5px;
-        margin-right: 10px;
-    }
-
-    .subtitulo{
-        margin-left: 5px;
-    }
-
-    #navegacao{
-        display: none;
-    }
-
-    #navegacao.active{
-        display: block;
-        position: absolute;
-        left: 0px;
-        margin-top: 60px;
-    }
-
-
-}
 
 
 /* === PRIMEIRO LAYOUT === */
@@ -412,23 +259,7 @@ a{
     color: var(--textos);
 }
 
-@media (max-width: 1000px){
-    .cards{
-        display: flex;
-        flex-direction: column;
-    }
 
-    .card{
-        margin: 10px auto;
-        cursor: pointer;
-    }
-
-    .card_imagem img{
-        width: 500px;
-        height: 200px;
-        border-radius: 15px;
-    }
-}
 /*=== PÁGINA SOBRE===*/
 
 .textos{
@@ -740,41 +571,7 @@ a{
     font-weight: 700;
 }
 
-@media (max-width: 1000px){
 
-    .contatoesug input{
-        height: 35px;
-    }
-
-    .contatoesug h1{
-        font-weight: 900;
-        font-size: 1.6em;
-    }
-    
-    .form{
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .form h2{
-        font-size: 1.2em;
-    }
-
-    .mensagem h2{
-        font-size: 1.2em;
-    }
-
-    .mensagem input{
-        width: 100%;
-        height: 250px;
-    }
-    
-    .botao-2{
-        padding: 15px 25px;
-        font-size: 0.9em;
-    }
-}
 /*==== MODAL OVERLAY ====*/
 
 .modal_overlay{
@@ -931,24 +728,5 @@ sup{
     color: var(--textos);
 }
 
-@media (max-width: 1000px){
-    .bg-footer{
-        background-color: var(--padrao-light);
-        margin-top: 5%;
-        height: 200vh;
-    }
 
-    .sobrefoodfy{
-        padding-left: 10px;
-    }
-
-    .footer-content{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .linksacesso{
-        margin-left: 0px;
-    }
-}
 
