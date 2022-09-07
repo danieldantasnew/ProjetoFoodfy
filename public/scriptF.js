@@ -45,15 +45,15 @@ function Ftoggle(){
     cabeca.classList.toggle('active');
 
 }
-const btnMenu = document.getElementById('menu');
 
+const lista = document.getElementById('lista');
 
 const botaoMenu = document.getElementById('btn-menu');
 botaoMenu.addEventListener('click', alteraMenu);
 
 
 function alteraMenu(){
-    btnMenu.classList.toggle('active');   
+    lista.classList.toggle('active');   
 }
 btnbotao.addEventListener('click', Ftoggle);
 

@@ -51,10 +51,43 @@
     /*MENU */
 
     #btn-menu{
-        display: block;
+        display: flex;
+        gap: 5px;
+        background: var(--corpo);
     }
 
-    #menu{
+    #hamburguer{
+        color: var(--padrao-dark);
+        width: 20px;
+        border-top: 2px solid;
+    }
+    
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+    }
+
+    #lista.active #hamburguer{
+        border-top-color: transparent;
+    }
+
+    #lista.active #hamburguer::before{
+        transform: rotate(135deg);
+        transition: .7s;
+    } 
+
+    #lista.active #hamburguer::after{
+        position: relative;
+        transform: rotate(-135deg);
+        transition: .7s;
+        top: -7px;
+    }
+
+    #lista #menu{
         display: block;
         position: absolute;
         left: 10px;
@@ -68,7 +101,7 @@
         overflow-y: hidden;
     }
 
-    #menu.active{
+    #lista.active #menu{
         height: calc(100vh - 70px);
         visibility: visible;
         overflow: auto;
@@ -108,7 +141,7 @@
     .bg-footer{
         background-color: var(--padrao-light);
         margin-top: 5%;
-        height: 200vh;
+        height: calc(100vh + 90px);
     }
 
     .sobrefoodfy{
