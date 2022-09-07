@@ -4,7 +4,8 @@
     <head>
         <title>Foodfy - Contatos</title>
         <link rel = "shortcut icon" href = "chef.png">
-        <link rel = "stylesheet" href = "../public/styles.css">
+        <link rel = "stylesheet" href = "../public/styles.css" media="all">
+        <link rel="stylesheet" href="../public/media.css" media="screen">
     </head>
 
     <body class="tema-claro">
@@ -23,41 +24,20 @@
                         <button id = "botaoEnter">Buscar</button>
                     </div>
 
-                    <div id="links-menu">
-                        <nav id="nav" class="distribui">
-                            <div id="navegacao">
-                                <a href = "sobre.html">Sobre</a>
-                                <a href = "receitas.html">Receitas</a>
-                                <a href="contato.html">Contato</a>
-                            </div>
-                        </nav>
+                    <div id="lista">
+                        <ul id="menu">
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="receitas.html">Receitas</a></li>
+                            <li><a href="entrar.html">Login</a></li>
+                        </ul>
                     </div>
-
-                    <div id = "logar" class=" distribui">
-                        <a href="entrar.html">Login</a>
-                        <img src="../icons/user.svg" alt="foto_usuario">
-                    </div>
-
 
                     <div id="botao-1" class="separacao">
                             <img src="../icons/moon.svg" alt="tema-claro">
                     </div>
 
-                    <button id = "btn-menu"><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <line x1="3" y1="12" x2="21" y2="12" />
-                        <line x1="3" y1="6" x2="21" y2="6" />
-                        <line x1="3" y1="18" x2="21" y2="18" />
-                      </svg></button>
+                    <button id = "btn-menu">Menu</button>
                 </div>
             </header>
 
