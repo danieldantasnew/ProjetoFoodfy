@@ -68,20 +68,20 @@ a{
     text-decoration: none;
 }
 
-#menu{
+#lista > #menu{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-#menu > li > a{
+#lista > #menu > li > a{
     padding: 10px;
     font-size: 1.2em;
     color: var(--letras-light);
 }
 
-#menu > li > a:hover{
+#lista > #menu > li > a:hover{
     color: var(--hover-light);
     transition: 200ms;
     font-weight: bold;
@@ -167,6 +167,7 @@ a{
     background-color: var(--padrao-dark);
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
