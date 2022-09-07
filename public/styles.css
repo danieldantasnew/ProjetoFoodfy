@@ -171,8 +171,6 @@ a{
 }
 
 
-
-
 /* === PRIMEIRO LAYOUT === */
 
 .layout{
@@ -220,6 +218,7 @@ a{
     margin-right: 10px;
 }
 
+
 /*=== CARDS ===*/
 
 .organizaCard{
@@ -259,7 +258,6 @@ a{
     height: 20px;
     color: var(--textos);
 }
-
 
 /*=== PÁGINA SOBRE===*/
 
@@ -572,7 +570,6 @@ a{
     font-weight: 700;
 }
 
-
 /*==== MODAL OVERLAY ====*/
 
 .modal_overlay{
@@ -662,6 +659,7 @@ sup{
 .bg-footer{
     background-color: var(--padrao-light);
     margin-top: 5%;
+    width: 100%;
     height: 350px;
 }
 
@@ -720,14 +718,9 @@ sup{
 }
 
 .rodape{
-    left: 0;
     text-align: center;
     background-color: var(--planodefundo);
-    width: 100%;
     padding: 23px;
     font-size: 14px;
-    color: var(--textos);
+    color: var(--textos);  
 }
-
-
-
