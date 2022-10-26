@@ -547,6 +547,7 @@ a{
     height: 50px;
     border-radius: 10px;
     font-size: 1.3em;
+    padding-left: 10px;
 }
 
 .form{
@@ -555,10 +556,18 @@ a{
     gap: 10px;
 }
 
-.mensagem input{
+.mensagem textarea{
     width: 100%;
     height: 250px;
-    /*descobrir como alinhar o texto em balões maiores*/
+    background-color: var(--padrao-light-2);
+    border-radius: 10px;
+    outline: rgba(0, 0, 0, 0.404) 1px solid;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+
 }
 
 .botao-2{
@@ -569,6 +578,7 @@ a{
     background-color: var(--padrao-dark);
     font-size: 1em;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /*==== MODAL OVERLAY ====*/
