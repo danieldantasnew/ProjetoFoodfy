@@ -40,16 +40,16 @@
                 </div>
             </header>
 
-            <div class="login">
+            <form action="teste.php" method="post" class="login">
                 <div class="login1">
                     <h1>Iniciar Sessão</h1>
                     <div class="email">
                         <h2>E-mail</h2>
-                        <input class = "entrada" type="email" name="email" placeholder="Digite o seu e-mail">
+                        <input class = "entrada" type="email" name="email" autocomplete="email" placeholder="Digite o seu e-mail" required>
                     </div>
                     <div class="senha">
                         <h2>Senha</h2>
-                        <input class = "entrada" type="password" name="senha" placeholder="Digite a sua senha">
+                        <input class = "entrada" type="password" minlength="8" maxlength="20" name="senha" autocomplete="current-password"  placeholder="Digite a sua senha" required>
                     </div>
 
                     <button class = "botao" type="submit">Entrar</button>
@@ -59,7 +59,7 @@
                     </div>
 
                 </div>
-            </div>
+            </form>
         </section>
 
         <footer>

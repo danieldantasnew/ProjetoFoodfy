@@ -116,7 +116,9 @@
     #menu > li > a{
         font-size: 1.3em;
         color: var(--padrao-dark);
+        position: relative;
     }
+
 }
 
 @media (max-width: 1000px){
@@ -191,5 +193,28 @@
     .botao-2{
         padding: 15px 25px;
         font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1001px){
+    #menu > li > a{
+        font-size: 1.3em;
+        color: var(--padrao-dark);
+        position: relative;
+    }
+
+    #lista > #menu > li > a::after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -3px;
+        background-color: var(--padrao-dark);
+    }
+
+    #lista > #menu > li > a:hover::after{
+        width: 100%;
+        transition: width 300ms ease-in-out 0.1s;
     }
 }
