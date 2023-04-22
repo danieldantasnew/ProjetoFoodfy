@@ -44,12 +44,14 @@
                 <div class="login1">
                     <h1>Iniciar Sessão</h1>
                     <div class="email">
-                        <h2>E-mail</h2>
-                        <input class = "entrada" type="email" name="email" autocomplete="email" placeholder="Digite o seu e-mail" required>
+                        <label for="email"><h2>E-mail</h2></label>
+                        <input class = "entrada" type="email" name="email" autocomplete="email" placeholder="Digite o seu e-mail" id="email" required>
                     </div>
                     <div class="senha">
-                        <h2>Senha</h2>
-                        <input class = "entrada" type="password" minlength="8" maxlength="20" name="senha" autocomplete="current-password"  placeholder="Digite a sua senha" required>
+                        <label for="senha">
+                            <h2>Senha</h2>
+                        </label>
+                        <input class = "entrada" type="password" minlength="8" maxlength="20" name="senha" autocomplete="current-password"  placeholder="Digite a sua senha" id = "senha"required>
                     </div>
 
                     <button class = "botao" type="submit">Entrar</button>
@@ -113,6 +115,7 @@
             <p>Todos direitos reservados, receitas Foodfy.</p>
         </div>
         
-        <script src="../public/scriptF.js"></script>
+        <script src="../public/scriptF.js"></script>    
     </body>
+    
 </html>

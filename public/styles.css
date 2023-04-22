@@ -68,6 +68,13 @@ a{
     text-decoration: none;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--padrao-light);
+}
+
 #lista > #menu{
     display: flex;
     flex-direction: row;
