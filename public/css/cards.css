@@ -1,0 +1,57 @@
+/*=== CARDS ===*/
+
+.organizaCard{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    margin: 10px auto;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card_imagem img{
+    width: 340px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.card_titulo h1{
+    margin: 20px auto 5px;
+    color: var(--textos);
+}
+
+
+.card_autor{
+    border-radius: 10px;
+    width: 50%;
+    height: 20px;
+    color: var(--textos);
+}
+
+@media (max-width: 1000px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 10px auto;
+        cursor: pointer;
+    }
+
+    .card_imagem img{
+        width: 500px;
+        height: 200px;
+        border-radius: 15px;
+    }
+}

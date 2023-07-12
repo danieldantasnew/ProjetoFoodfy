@@ -1,0 +1,67 @@
+/* PÁGINA DE LOGIN */
+
+.login1{
+    color: var(--textos);
+}
+
+.login {
+    width: 400px;
+    height: 520px;
+    margin: 14vh auto;
+    margin-bottom: 40vh;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px var(--bordas);
+}
+
+.login h1{
+    padding-top: 20px;
+    font-size: 2.5em;
+}
+
+.login h2{
+    margin-left: 4%;
+    text-align: left;
+    font-size: 21px;
+}
+
+.login a{
+    margin: 10px auto;
+    text-decoration: none;
+    color: rgb(63, 60, 60);
+}
+
+.entrada{
+    padding-left: 2%;
+    width: 370px;
+    height: 40px;
+    border-radius: 5px;
+    outline: rgba(0, 0, 0, 0.404) 1px solid;
+    font-size: 1em;
+}
+
+#subopc a{
+    font-size: 1.1em;
+    font-weight: normal;
+    color: var(--textos);
+}
+
+#subopc a:hover{
+    color:var(--padrao-dark);
+    font-weight: bold;
+}
+
+.botao{
+    margin: 30px auto;
+    padding: 15px 100px;
+    border-radius: 5px;
+    background-color: var(--padrao-dark);
+    color: white;
+    font-weight: 600;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.entrada::placeholder{
+    font-size: 1em;
+}

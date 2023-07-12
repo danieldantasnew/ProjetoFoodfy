@@ -1,0 +1,18 @@
+/*=== PÁGINA SOBRE===*/
+
+.textos{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.textos h1, h2, h3{
+    font-size: 1.5em;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: var(--textos);
+}
+
+.textos p{
+    font-size: 18px;
+    color: var(--textos);
+}
