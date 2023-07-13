@@ -6,6 +6,7 @@
 @import url('./contato.css');
 @import url('./modal.css');
 @import url('./sobre.css');
+@import url('./layoutChef.css');
 
 *{
     margin: 0;
@@ -93,52 +94,6 @@ a{
     margin: 0 auto; 
 }
 
-/* === PRIMEIRO LAYOUT === */
-
-.layout{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items:center;
-    background-color: var(--padrao-light);
-    max-width: 58.75em;
-    max-height: 33em;
-    padding: 4em 0.25em;
-    border-radius: 30px;
-    padding-bottom: 1px;
-    margin-top: 36px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.layout img{
-    padding-right: 5%;
-}
-
-.layoutTexto{
-    color: var(--corWhite);
-}
-
-.layoutTexto h1{
-    font-weight: 900;
-    font-size: 2em;
-    margin: 0px auto;
-    padding-left: 20px;
-    padding-top: 3vh;
-}
-
-.layoutTexto p{
-    line-height: 28px;
-    max-width: 300px;
-    padding-left: 20px;
-    padding-top: 1vh;
-}
-
-.subtitulo h2{
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
 /* PAGINA DE RECEITA CLICÁVEL*/
 
