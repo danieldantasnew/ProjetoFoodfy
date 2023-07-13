@@ -4,8 +4,7 @@
     <head>
         <title>Foodfy - Contatos</title>
         <link rel = "shortcut icon" href = "chef.png">
-        <link rel = "stylesheet" href = "../public/styles.css" media="all">
-        <link rel="stylesheet" href="../public/media.css" media="screen">
+        <link rel = "stylesheet" href = "../public/css/all.css" media="all">
     </head>
 
     <body class="tema-claro">
@@ -61,40 +60,50 @@
             </section>
 
 
-            <section class="contatoesug">
+            <form class="contatoesug" action="teste.php" method="post">
                 <h1>Dúvidas & Sugestões</h1>
                 
-                <section class="form">
-                        <div>
+                <section class="form" ac>
+                    <div>
+                        <label for="nome-contato">
                             <h2>Nome</h2>
-                            <input type="text">
-                        </div>
-        
-                        <div>
+                        </label>
+                        <input type="text" id="nome-contato" required>
+                    </div>
+    
+                    <div>
+                        <label for="sobrenome-contato">
                             <h2>Sobrenome</h2>
-                            <input type="text">
-                        </div>
+                        </label>
+                        <input type="text" id="sobrenome-contato" required>
+                    </div>
 
-                        <div>
+                    <div>
+                        <label for="email-contato">
                             <h2>Email</h2>
-                            <input type="email">
-                        </div>
-        
-                        <div>
+                        </label>
+                        <input type="email" id="email-contato" required>
+                    </div>
+    
+                    <div>
+                        <label for="assunto-contato">
                             <h2>Assunto</h2>
-                            <input type="text">
-                        </div>
+                        </label>
+                        <input type="text" id="assunto-contato" required>
+                    </div>
 
                 </section>
 
 
                 <div class="mensagem">
-                    <h2>Mensagem</h2>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="mensagem-contato">
+                        <h2>Mensagem</h2>
+                    </label>
+                    <textarea name="" id="mensagem-contato" cols="30" rows="10" required></textarea>
                 </div>
 
                 <button class="botao-2">Enviar</button>
-            </section>
+            </form>
 
 
         </section>
@@ -150,6 +159,7 @@
             <p>Todos direitos reservados, receitas Foodfy.</p>
         </div>
 
-        <script src="../public/scriptF.js"></script>
+        <script type="module" src="../public/js/allScript.js"></script>    
     </body>
+    
 </html>

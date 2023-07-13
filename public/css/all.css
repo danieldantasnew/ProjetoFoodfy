@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('./menu.css');
+@import url('./cards.css');
+@import url('./receitas.css');
+@import url('./login.css');
+@import url('./contato.css');
+@import url('./modal.css');
+@import url('./sobre.css');
+@import url('./layoutChef.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*CORES PADRÃO */
+    --padrao: #F58F29;
+    --padrao-dark: #ff8408;
+    --padrao-light: #fc8b1afa;
+    --padrao-light-2: #ffca94f1;
+
+    /* MODO LIGHT*/
+    --corWhite: white;
+    --corpo: rgba(255, 255, 255, 0.6);
+    --letras-light: black;
+    --bordas-light: rgba(0, 0, 0, 0.274);
+    --inverte-light: white;
+    --hover-light: var(--padrao-dark);
+
+    /* MODO DARK */
+    --corpo-dark: #24292E;
+    --letras-dark: white;
+    --bordas-dark: rgba(255, 255, 255, 0.26);
+    --inverte-dark: #24292E;
+    --hover-dark: white;
+}
+
+.tema-claro{
+    --planodefundo: var(--corpo);
+    --textos: var(--letras-light);
+    --bordas: var(--bordas-light);
+    --inverte: var(--inverte-light);
+    --hover: var(--hover-light);
+}
+
+.tema-escuro{
+    --planodefundo: var(--corpo-dark);
+    --textos: var(--letras-dark);
+    --bordas: var(--bordas-dark);
+    --inverte: var(--inverte-dark);
+    --hover: var(--hover-dark);
+}
+
+body{
+    background: var(--planodefundo);
+    font-family: 'Roboto', sans-serif; 
+}
+
+#cabeca{
+    height: 70px;
+    width: calc(100% - 10px);
+    background-color: var(--planodefundo);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--padrao-light);
+}
+
+.cards img{
+    display: block;
+    max-width: 100%;
+}
+
+.corpo{
+    max-width: 960px;  
+    margin: 0 auto; 
+}
+
+
+/* PAGINA DE RECEITA CLICÁVEL*/
+
+.ham{
+    margin: 30px 10px;
+    color: var(--textos);
+}
+.ham img{
+    width: 100%;
+    height: 280px;
+}
+
+.info_card{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.textos_receitaUnica{
+    margin: 10px;
+}
+
+.textos_receitaUnica h2{
+    font-size: 2em;
+}
+
+.textos_receitaUnica p{
+    margin: 20px 0;
+    text-align: justify;
+    color: var(--textos);
+}
+
+#unico{
+    margin: 10px;
+}
+
+.lista_ingredientes{
+    font-size: 1.1em;
+    margin-left: 30px;
+}
+
+.lista_ingredientes li{
+    padding: 6px 0;
+    text-align: justify;
+    color: var(--textos);
+}
+
+/* === RODAPÉ === */
+
+sup{
+    font-size: 0.4em;
+}
+
+.bg-footer{
+    background-color: var(--padrao-light);
+    margin-top: 5%;
+    width: 100%;
+    height: 350px;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 960px;
+    padding-left: 2%;
+    color: var(--corWhite);
+    text-align: left;
+}
+
+.footer-content li{
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: var(--corWhite);
+}
+
+.footer-content h3{
+    padding-left: 10px;
+    color: var(--corWhite);
+}
+
+.sobrefoodfy h3{
+    padding-left: 0px;
+}
+
+.sobrefoodfy h4{
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+.sobrefoodfy p{
+    line-height: 1.4em;
+}
+
+.redesocial{
+    display: flex;
+    justify-content: flex-start;
+    justify-self: left;
+    margin-top: 20px;
+}
+
+.redesocial a{
+    padding: 10px 10px 10px 0px;
+}
+
+.linksacesso{
+    margin-left: 30px;
+}
+
+.rodape{
+    text-align: center;
+    background-color: var(--planodefundo);
+    padding: 23px;
+    font-size: 14px;
+    color: var(--textos);  
+}
+
+@media (max-width: 1000px){
+    .bg-footer{
+        background-color: var(--padrao-light);
+        margin-top: 5%;
+        height: calc(100vh + 90px);
+    }
+
+    .sobrefoodfy{
+        padding-left: 10px;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linksacesso{
+        margin-left: 0px;
+    }
+}

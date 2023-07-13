@@ -1,0 +1,34 @@
+/*PAGINA DE RECEITAS */
+
+.organizareceita{
+    margin: 20px;
+}
+
+.categoria ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #F58F29;
+    border-radius: 10px;
+}
+
+.categoria li{
+    padding: 10px;
+}
+
+.categoria nav{
+    padding: 20px 10px;
+}
+
+.categoria a{
+    color: var(--letras-light);
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.categoria a:hover{
+    color: var(--corWhite);
+    font-weight: bold;
+    transition: 400ms;
+}
