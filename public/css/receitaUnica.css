@@ -1,0 +1,45 @@
+/* PAGINA DE RECEITA CLICÁVEL*/
+
+.ham{
+    margin: 30px 10px;
+    color: var(--textos);
+}
+.ham img{
+    width: 100%;
+    height: 280px;
+}
+
+.info_card{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.textos_receitaUnica{
+    margin: 10px;
+}
+
+.textos_receitaUnica h2{
+    font-size: 2em;
+}
+
+.textos_receitaUnica p{
+    margin: 20px 0;
+    text-align: justify;
+    color: var(--textos);
+}
+
+#unico{
+    margin: 10px;
+}
+
+.lista_ingredientes{
+    font-size: 1.1em;
+    margin-left: 30px;
+}
+
+.lista_ingredientes li{
+    padding: 6px 0;
+    text-align: justify;
+    color: var(--textos);
+}
