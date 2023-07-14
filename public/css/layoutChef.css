@@ -2,7 +2,7 @@
 
 .layout{
     background-color: var(--padrao-light);
-    display: grid;
+    display: none; /*grid*/
     grid-template-columns: minmax(180px, 500px) minmax(120px, 300px);
     grid-template-rows: minmax(80px, 300px);
     justify-items:center;
@@ -13,7 +13,7 @@
 }
 
 .imagem-bg-chef{
-    display: none; /*grid*/
+    display: grid;
     height: 100%;
     width: 100%;
     padding-bottom: 8px;
