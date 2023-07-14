@@ -95,7 +95,7 @@
     #cabeca.active{
         transition: 2s;
         background-color: var(--padrao-light);
-        height: 100vh;
+        height: 90vh;
         width: 100%;
     }
 
@@ -139,7 +139,7 @@
         margin-left: 5px;
     }
 
-    /*MENU */
+    /* >>>>>  MENU <<<<<*/
 
     #btn-menu{
         display: flex;
@@ -213,7 +213,7 @@
 }
 
 @media (min-width: 1001px){
-    #menu > li > a{
+    /* #menu > li > a{
         font-size: 1.3em;
         color: var(--padrao-dark);
         position: relative;
@@ -232,5 +232,5 @@
     #lista > #menu > li > a:hover::after{
         width: 100%;
         transition: width 300ms ease-in-out 0.1s;
-    }
+    } */
 }
