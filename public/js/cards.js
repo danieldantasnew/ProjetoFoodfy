@@ -13,9 +13,10 @@ export default function cards(){
         
         //cria a tag img para inserir a imagem
 
-        const imagem =  document.createElement('img');
+        const imagem =  document.createElement('div');
         cardImagem.appendChild(imagem);
-        imagem.src = srcImagem;
+        imagem.id = srcImagem;
+        imagem.classList.add('design-imagem-card');
     
         //cria a div para inserir as informações
 
