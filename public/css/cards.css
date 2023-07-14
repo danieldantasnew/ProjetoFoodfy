@@ -8,6 +8,7 @@
 .cards{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .card{
@@ -55,7 +56,8 @@
 }
 
 .card_titulo{
-    padding-left: 4px;
+    padding-left: 6px;
+    padding-bottom: 10px;
 }
 
 .card_titulo h1{
@@ -89,7 +91,7 @@
     .cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 12px;
+        gap: 16px;
     }
 
     .card{

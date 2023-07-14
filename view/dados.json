@@ -28,5 +28,35 @@
         "srcImagem": "../Imagens/asinhas.png",
         "titulo": "Asinhas de frango ao barbecue",
         "autor": "por Vania Steroski"
+    },
+    {
+        "srcImagem": "../Imagens/burger.png",
+        "titulo": "Triplo bacon burger",
+        "autor": "por Jorge Relato"
+    },
+    {
+        "srcImagem": "../Imagens/pizza.png",
+        "titulo": "Pizza 4 estações",
+        "autor": "por Fabiana Melo"
+    },
+    {
+        "srcImagem": "../Imagens/espaguete.png",
+        "titulo": "Espaguete ao alho",
+        "autor": "por Júlia Kinoto"
+    },
+    {
+        "srcImagem": "../Imagens/lasanha.png",
+        "titulo": "Lasanha mac n' cheese",
+        "autor": "por Juliano Vieira"
+    },
+    {
+        "srcImagem": "../Imagens/doce.png",
+        "titulo": "Docinhos pão-do-céu",
+        "autor": "por Ricardo Golvea"
+    },
+    {
+        "srcImagem": "../Imagens/asinhas.png",
+        "titulo": "Asinhas de frango ao barbecue",
+        "autor": "por Vania Steroski"
     }
 ]
