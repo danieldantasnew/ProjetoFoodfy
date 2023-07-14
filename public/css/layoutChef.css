@@ -2,7 +2,7 @@
 
 .layout{
     background-color: var(--padrao-light);
-    display: none; /*grid*/
+    display: grid; 
     grid-template-columns: minmax(180px, 500px) minmax(120px, 300px);
     grid-template-rows: minmax(80px, 300px);
     justify-items:center;

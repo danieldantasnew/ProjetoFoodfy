@@ -4,6 +4,9 @@ sup{
     font-size: 0.4em;
 }
 
+footer{
+    display:none;/*apenas para teste*/
+}
 
 .bg-footer{
     background-color: var(--padrao-light);
