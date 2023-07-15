@@ -20,7 +20,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
-    max-width: 960px;
+    /* max-width: 960px; */
     padding-left: 2%;
     color: var(--corWhite);
     text-align: left;
