@@ -2,8 +2,8 @@
 
 .layout{
     background-color: var(--padrao-light);
-    display: none;  /*grid*/
-    grid-template-columns: minmax(180px, 500px) minmax(120px, 300px);
+    display: grid;
+    grid-template-columns: minmax(140px, 500px) minmax(120px, 300px);
     grid-template-rows: minmax(80px, 300px);
     justify-items:center;
     align-items: center;
@@ -64,8 +64,9 @@
 
 
 @media (max-width: 435px) {
+
     .layout{
-        background-color: red;
+        height: 280px;
     }
 
     .layoutTexto h1{

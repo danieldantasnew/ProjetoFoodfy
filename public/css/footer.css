@@ -5,7 +5,7 @@ sup{
 }
 
 footer{
-    display:none;/*apenas para teste*/
+    padding-top: 12px;
 }
 
 .bg-footer{
@@ -13,6 +13,7 @@ footer{
     margin-top: 5%;
     width: 100%;
     height: 100%;
+    padding-bottom: 24px;
 }
 
 .footer-content{
@@ -27,7 +28,7 @@ footer{
 
 .footer-content li{
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -38,6 +39,7 @@ footer{
 
 .footer-content h3{
     padding-left: 10px;
+    font-size: 1.6rem;
     color: var(--corWhite);
 }
 
@@ -97,7 +99,17 @@ footer{
         flex-direction: column;
     }
 
+    .footer-content h3{
+        font-size: 1.4rem;
+    }
+
+    .footer-content li{
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
     .linksacesso{
         margin-left: 0px;
-    }
+    }  
 }
