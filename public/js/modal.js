@@ -1,4 +1,21 @@
 export default function modal(){
+
+}
+
+const cards = document.querySelectorAll("[data-card]");
+
+cards.forEach((card) =>{
+    /*pode ser preciso aguardar o site ser carregado para ativar essa função, se n pode dar erro pois não encontrará o dataset*/
+    card.addEventListener('click', handleCard);
+
+    function handleCard(){
+        
+    }
+});
+
+
+
+
     // const modalOverlay = document.querySelector(".modal_overlay");
     // const cards = document.querySelectorAll(".card");
     
@@ -22,4 +39,3 @@ export default function modal(){
     //     modalOverlay.classList.remove("active");
     //     modalOverlay.querySelector("modal_conteudo img").src = ""
     // });
-}

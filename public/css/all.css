@@ -59,6 +59,7 @@
 body{
     background: var(--planodefundo);
     font-family: 'Roboto', sans-serif; 
+    position: relative;
 }
 
 #cabeca{
@@ -92,6 +93,6 @@ a{
 }
 
 .corpo{
-    /* max-width: 960px;   */
+    max-width: 960px;  
     margin: 0 auto; 
 }

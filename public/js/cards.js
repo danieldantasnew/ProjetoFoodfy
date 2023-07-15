@@ -4,6 +4,7 @@ export default function cards(){
         //cria div
         const card = document.createElement('div');
         card.classList.add('card');
+        card.dataset.card;
     
         //cria div para inserir a imagem
 
@@ -49,15 +50,19 @@ export default function cards(){
         const dados = await fetch('./dados.json');
         const dadosJson = await dados.json(); 
 
-        dadosJson.forEach((dado, index) => {
-           const card =  createCard(dado.srcImagem);
-           adicionaCard(card);
-           const titulo = document.querySelectorAll('.card_titulo h1');
-           const autor = document.querySelectorAll('.card_autor p');
-
-           titulo[index].innerText = dado.titulo;
-           autor[index].innerText = dado.autor;    
-        });
+        try {
+            dadosJson.forEach((dado, index) => {
+                const card =  createCard(dado.srcImagem);
+                adicionaCard(card);
+                const titulo = document.querySelectorAll('.card_titulo h1');
+                const autor = document.querySelectorAll('.card_autor p');
+     
+                titulo[index].innerText = dado.titulo;
+                autor[index].innerText = dado.autor;    
+             });
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     
