@@ -3,61 +3,84 @@
         "srcImagem": "../Imagens/burger.png",
         "titulo": "Triplo bacon burger",
         "autor": "por Jorge Relato",
-        "ingredientes": "<ul class='ingredientes'><li>3 Texas Burguer Seara</li><li>3 colheres de chá de óleo</li><li>6 fatias de queijo cheddar</li><li>2 fatias de Bacon Fatias Redondas Double Smoked Seara Gourmet</li><li>1 pão de gergelim para hambúrguer</li>"
+        "ingredientes": "<ul class='ingredientes'><li>3 Texas Burguer Seara</li><li>3 colheres de chá de óleo</li><li>6 fatias de queijo cheddar</li><li>2 fatias de Bacon Fatias Redondas Double Smoked Seara Gourmet</li><li>1 pão de gergelim para hambúrguer</li>",
+        "modoPreparo": "<p>Em um liquidificador junte as gemas e o suco de limão, bata em velocidade baixa até formar uma mistura;</p><p>Ainda batendo, junte o óleo em fio vagarosamente. Quando a mistura atingir um ponto cremoso, junte o restante dos ingredientes separadamente, batendo a cada adição e bata até ficar homogêneo. Coloque em um pote com tampa, leve à geladeira por pelo menos 1h;</p>"
     },
     {
         "srcImagem": "../Imagens/pizza.png",
         "titulo": "Pizza 4 estações",
-        "autor": "por Fabiana Melo"
+        "autor": "por Fabiana Melo",
+        "ingredientes": "<ul class='ingredientes'><li>50g de queijo fresco bem picado</li><li>50g de presunto cru em fatias finas</li><li>1 colher (sopa) de cebolas picada</li><li>Sal e pimenta do reino a gosto</li>",
+        "modoPreparo": "<p>Coloque a massa de pizza em uma assadeira. Faça com um pouco de massa dois rolinhos de 1/2cm de diâmetro e disponha em cruz no centro da pizza. Isso vai servir para separar os recheios. Pique o queijo e o presunto e espalhe em um dos quartos da pizza. Sobre eles, espalhe a cebola. Salgue e apimente.</p>"
     },
     {
         "srcImagem": "../Imagens/espaguete.png",
         "titulo": "Espaguete ao alho",
-        "autor": "por Júlia Kinoto"
+        "autor": "por Júlia Kinoto",
+        "ingredientes": "<ul class='ingredientes'><li>200g de espaguete</li><li>2 colheres de sopa azeite de oliva</li><li>2 dentes de alho picados</li>",
+        "modoPreparo": "<p><ul class='ingredientes'><li>200g de espaguete</li><li>2 colheres de sopa azeite de oliva</li><li>2 dentes de alho picados</li></p>"
     },
     {
         "srcImagem": "../Imagens/lasanha.png",
         "titulo": "Lasanha mac n' cheese",
-        "autor": "por Juliano Vieira"
+        "autor": "por Juliano Vieira",
+        "ingredientes": "<ul class='ingredientes'><li>1 pacote de macarrão tipo caracol cozido 'al dente'</li><li>3 colheres de sopa de manteiga</li><li>1 colher e 1/2 de sopa de farinha de trigo</li><li>2 xícaras de leite integral</li><li>10 fatias de queijo cheddar tipo sanduíche cortadas em tiras</li><li>queijo parmesão</li><li>pimenta-do-reino</li><li>sal</li>",
+        "modoPreparo": "<p>Derreta a margarina e coloque a farinha sem parar de mexer. Coloque o leite e em seguida o queijo mexendo sempre. Quando engrossar coloque por cima do macarrão cozido. Salpique parmesão e leve ao forno até gratinar.</p>"
     },
     {
         "srcImagem": "../Imagens/doce.png",
         "titulo": "Docinhos pão-do-céu",
-        "autor": "por Ricardo Golvea"
+        "autor": "por Ricardo Golvea",
+        "ingredientes": "<ul class='ingredientes'><li>5 Ovos</li><li>2 Latas de Leite Condensado (395ml cada)</li><li>1 Vidro de Leite de Coco (200ml)</li><li>1 Vidro de Leite de Coco (200ml)</li><li>200ml de Leite Integral</li><li>200g de Coco Ralado Seco</li>",
+        "modoPreparo": "<p>Pré Aqueça o forno à 180º por 10 minutos. No copo do liquidificador, coloque os 5 ovos inteiros, as 2 latas de Leite Condensado, o Leite de Coco (200ml), a mesma medida de Leite Integral e 100g de Coco Ralado Seco. Bata no liquidificador por 1 minuto, apenas para liquidificar um pouco o Coco. Despeje toda a mistura em uma Forma de Torta (de aproximadamente 29cm) untada com Manteiga e um pouco de Coco Ralado. (A mistura ficará bem líquida). Leve ao forno por 30 minutos à 180º. Leve a geladeira por 1h30. Decore com Coco Ralado.</p>"
     },
     {
         "srcImagem": "../Imagens/asinhas.png",
         "titulo": "Asinhas de frango ao barbecue",
-        "autor": "por Vania Steroski"
+        "autor": "por Vania Steroski",
+        "ingredientes": "<ul class='ingredientes'><li>1 kg de meio das asas SEARA</li><li>1 colher (chá) de sal</li><li>1 colher (chá) de pimenta-do-reino</li><li>1 colher (sopa) de óleo de canola</li>",
+        "modoPreparo": "<p>Tempere os pedaços de frango com sal e pimenta. Unte uma assadeira com óleo e os espalhe sobre ela. Tente não deixar as asas sobrepostas; se precisar, coloque em duas assadeiras. Asse em forno médio por 45 minutos, virando o frango na metade do tempo, para dourar dos dois lados. Enquanto as asas assam, prepare o molho barbecue.</p>"
     },
     {
         "srcImagem": "../Imagens/burger.png",
         "titulo": "Triplo bacon burger",
-        "autor": "por Jorge Relato"
+        "autor": "por Jorge Relato",
+        "ingredientes": "<ul class='ingredientes'><li>3 Texas Burguer Seara</li><li>3 colheres de chá de óleo</li><li>6 fatias de queijo cheddar</li><li>2 fatias de Bacon Fatias Redondas Double Smoked Seara Gourmet</li><li>1 pão de gergelim para hambúrguer</li>",
+        "modoPreparo": "<p>Em um liquidificador junte as gemas e o suco de limão, bata em velocidade baixa até formar uma mistura;</p><p>Ainda batendo, junte o óleo em fio vagarosamente. Quando a mistura atingir um ponto cremoso, junte o restante dos ingredientes separadamente, batendo a cada adição e bata até ficar homogêneo. Coloque em um pote com tampa, leve à geladeira por pelo menos 1h;</p>"
     },
     {
         "srcImagem": "../Imagens/pizza.png",
         "titulo": "Pizza 4 estações",
-        "autor": "por Fabiana Melo"
+        "autor": "por Fabiana Melo",
+        "ingredientes": "<ul class='ingredientes'><li>50g de queijo fresco bem picado</li><li>50g de presunto cru em fatias finas</li><li>1 colher (sopa) de cebolas picada</li><li>Sal e pimenta do reino a gosto</li>",
+        "modoPreparo": "<p>Coloque a massa de pizza em uma assadeira. Faça com um pouco de massa dois rolinhos de 1/2cm de diâmetro e disponha em cruz no centro da pizza. Isso vai servir para separar os recheios. Pique o queijo e o presunto e espalhe em um dos quartos da pizza. Sobre eles, espalhe a cebola. Salgue e apimente.</p>"
     },
     {
         "srcImagem": "../Imagens/espaguete.png",
         "titulo": "Espaguete ao alho",
-        "autor": "por Júlia Kinoto"
+        "autor": "por Júlia Kinoto",
+        "ingredientes": "<ul class='ingredientes'><li>200g de espaguete</li><li>2 colheres de sopa azeite de oliva</li><li>2 dentes de alho picados</li>",
+        "modoPreparo": "<p><ul class='ingredientes'><li>200g de espaguete</li><li>2 colheres de sopa azeite de oliva</li><li>2 dentes de alho picados</li></p>"
     },
     {
         "srcImagem": "../Imagens/lasanha.png",
         "titulo": "Lasanha mac n' cheese",
-        "autor": "por Juliano Vieira"
+        "autor": "por Juliano Vieira",
+        "ingredientes": "<ul class='ingredientes'><li>1 pacote de macarrão tipo caracol cozido 'al dente'</li><li>3 colheres de sopa de manteiga</li><li>1 colher e 1/2 de sopa de farinha de trigo</li><li>2 xícaras de leite integral</li><li>10 fatias de queijo cheddar tipo sanduíche cortadas em tiras</li><li>queijo parmesão</li><li>pimenta-do-reino</li><li>sal</li>",
+        "modoPreparo": "<p>Derreta a margarina e coloque a farinha sem parar de mexer. Coloque o leite e em seguida o queijo mexendo sempre. Quando engrossar coloque por cima do macarrão cozido. Salpique parmesão e leve ao forno até gratinar.</p>"
     },
     {
         "srcImagem": "../Imagens/doce.png",
         "titulo": "Docinhos pão-do-céu",
-        "autor": "por Ricardo Golvea"
+        "autor": "por Ricardo Golvea",
+        "ingredientes": "<ul class='ingredientes'><li>5 Ovos</li><li>2 Latas de Leite Condensado (395ml cada)</li><li>1 Vidro de Leite de Coco (200ml)</li><li>1 Vidro de Leite de Coco (200ml)</li><li>200ml de Leite Integral</li><li>200g de Coco Ralado Seco</li>",
+        "modoPreparo": "<p>Pré Aqueça o forno à 180º por 10 minutos. No copo do liquidificador, coloque os 5 ovos inteiros, as 2 latas de Leite Condensado, o Leite de Coco (200ml), a mesma medida de Leite Integral e 100g de Coco Ralado Seco. Bata no liquidificador por 1 minuto, apenas para liquidificar um pouco o Coco. Despeje toda a mistura em uma Forma de Torta (de aproximadamente 29cm) untada com Manteiga e um pouco de Coco Ralado. (A mistura ficará bem líquida). Leve ao forno por 30 minutos à 180º. Leve a geladeira por 1h30. Decore com Coco Ralado.</p>"
     },
     {
         "srcImagem": "../Imagens/asinhas.png",
         "titulo": "Asinhas de frango ao barbecue",
-        "autor": "por Vania Steroski"
+        "autor": "por Vania Steroski",
+        "ingredientes": "<ul class='ingredientes'><li>1 kg de meio das asas SEARA</li><li>1 colher (chá) de sal</li><li>1 colher (chá) de pimenta-do-reino</li><li>1 colher (sopa) de óleo de canola</li>",
+        "modoPreparo": "<p>Tempere os pedaços de frango com sal e pimenta. Unte uma assadeira com óleo e os espalhe sobre ela. Tente não deixar as asas sobrepostas; se precisar, coloque em duas assadeiras. Asse em forno médio por 45 minutos, virando o frango na metade do tempo, para dourar dos dois lados. Enquanto as asas assam, prepare o molho barbecue.</p>"
     }
 ]
