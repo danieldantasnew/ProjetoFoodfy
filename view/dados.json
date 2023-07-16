@@ -2,7 +2,8 @@
     {
         "srcImagem": "../Imagens/burger.png",
         "titulo": "Triplo bacon burger",
-        "autor": "por Jorge Relato"
+        "autor": "por Jorge Relato",
+        "ingredientes": "<ul class='ingredientes'><li>3 Texas Burguer Seara</li><li>3 colheres de chá de óleo</li><li>6 fatias de queijo cheddar</li><li>2 fatias de Bacon Fatias Redondas Double Smoked Seara Gourmet</li><li>1 pão de gergelim para hambúrguer</li>"
     },
     {
         "srcImagem": "../Imagens/pizza.png",

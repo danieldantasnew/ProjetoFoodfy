@@ -58,51 +58,6 @@
         </section>
     </section>
 
-    <div class="modal_overlay">
-        <div class="modal">
-            <div class="close_modal">
-                <img src="../icons/x.svg"/>
-            </div>
-
-            <div class="modal_conteudo">
-                <img src="" alt="Foto do prato">
-
-            </div>
-
-            <div class="titulosModal">
-                    <h1></h1>
-                <div class = "autor">
-                    <p></p>
-                </div>
-            </div>
-
-            <div class="modal_detalhes">
-                <div class = "ingredientes">
-                    <h2>Ingredientes</h2>
-                    <ul>
-                        <li>1 lata de creme de leite</li>
-                        <li>1 lata de milho verde</li>
-                        <li>1 copo de requeijão cremoso</li>
-                        <li>100 g de azeitona sem caroço</li>
-                        <li>2 peitos de frango desfiados</li>
-                        <li>200 g de mussarela fatiada</li>
-                        <li>100 g de batata palha</li>
-                        <li>1 xícara de água</li>
-                        <li>1 pitada de sal</li>
-                    </ul>
-                </div>
-
-                <div class="detalhes">
-                    <h2>Preparo</h2>
-                    <p>30 Min</p>
-                    <h2 id = "rend">Rendimento</h2>
-                    <p>5 Porções</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-
     <footer>
         <div class="bg-footer">
             <section class="footer-content">
@@ -140,7 +95,7 @@
 
                 <div class="contatos-footer">
                     <h3>Contatos</h3>
-                    <ul>
+                    <ul class="lista-contatos">
                         <li><a href="contato.html">3421-8369</a></li>
                         <li><a href="contato.html">foodfy@gmail.com</a></li>
                         <li><a href="contato.html">Rua Horácio Nóbrega, 451, Belo Horizonte.</a></li>
@@ -148,10 +103,27 @@
                 </div>
             </section>
         </div>
+        <div class="rodape">
+            <p>Todos direitos reservados, receitas Foodfy.</p>
+        </div>
     </footer>
+    
+    <div class="modal" data-modal="modal">
+        <div class="card-modal">
+            <div class="card_imagem-modal">
+                <div>
+                </div>
+            </div>
+        
+            <div class="card_titulo-modal">
+                <h1></h1>
+                <div class="card_autor-modal">
+                    <p></p>
+                </div>
+            </div>
 
-    <div class="rodape">
-        <p>Todos direitos reservados, receitas Foodfy.</p>
+            <div class="close-modal" data-modal="closeModal"><img src=".././Imagens/x-circle.svg" alt="close-modal"></div>
+        </div>
     </div>
     
     <script type="module" src="../public/js/allScript.js"></script>   

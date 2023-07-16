@@ -1,17 +1,80 @@
-export default function modal(){
+export default function modalAction(){
 
+    const observer = new MutationObserver(activeModal);
+    const cardsFather = document.querySelector('[data-card]');
+    observer.observe(cardsFather, {childList: true});
+
+    function activeModal(Mutation){
+        const cards = document.querySelectorAll('.card');
+        const modal = document.querySelector('[data-modal="modal"]');
+        const closeModal = document.querySelector('[data-modal="closeModal"] img');
+        let informacoesCard = {};
+        
+        modal.addEventListener('click', closeModalFunction);
+        closeModal.addEventListener('click', closeModalFunction);
+    
+        // Identificará o clique longo
+        let timeOut;
+        cards.forEach((card, index) =>{
+            card.addEventListener('mousedown', ()=>{
+                timeOut = setTimeout(()=>{
+                    handleCard(index); 
+                }, 1000);     
+            });
+            
+            card.addEventListener('mouseup', ()=>{
+                clearTimeout(timeOut);
+            });
+        });
+    
+        function handleCard(index){
+            informacoesCard.index = index;
+            modal.classList.add('active');
+            fetchDados();
+        }
+    
+        function closeModalFunction(event){
+            if(event.target == modal || event.target == closeModal){
+                modal.classList.remove('active');
+            }
+        }
+    
+        async function fetchDados(){
+            try{
+                const dados = await fetch('./dados.json');
+                const dadosJson = await dados.json();
+                informacoesCard = {
+                    imagem: dadosJson[informacoesCard.index].srcImagem,
+                    titulo: dadosJson[informacoesCard.index].titulo,
+                    autor: dadosJson[informacoesCard.index].autor,
+                    ingredientes: dadosJson[informacoesCard.index].ingredientes
+                }
+    
+                recebeDados();
+            }
+            catch(erro){
+                console.log(erro)
+            }
+        }
+        
+        function recebeDados(){
+            const imagemModal = document.querySelector('.card_imagem-modal div');
+            const modalTitulo = document.querySelector('.card_titulo-modal h1');
+            const nomeAutorModal = document.querySelector('.card_autor-modal p');
+            const ingredientes = document.querySelector('.ingredientes');
+
+
+            imagemModal.id = informacoesCard.imagem;
+            imagemModal.classList.add('design-imagem-card-modal')
+            modalTitulo.innerText = informacoesCard.titulo;
+            nomeAutorModal.innerText = informacoesCard.autor;
+            ingredientes.innerHTML = informacoesCard.ingredientes;
+        }   
+
+        observer.disconnect();
+    }
 }
 
-const cards = document.querySelectorAll("[data-card]");
-
-cards.forEach((card) =>{
-    /*pode ser preciso aguardar o site ser carregado para ativar essa função, se n pode dar erro pois não encontrará o dataset*/
-    card.addEventListener('click', handleCard);
-
-    function handleCard(){
-        
-    }
-});
 
 
 

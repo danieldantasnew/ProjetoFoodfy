@@ -1,10 +1,12 @@
+
+
 export default function cards(){
 
     function createCard(srcImagem){
         //cria div
         const card = document.createElement('div');
         card.classList.add('card');
-        card.dataset.card;
+        card.dataset.card = "card";
     
         //cria div para inserir a imagem
 
@@ -73,6 +75,5 @@ export default function cards(){
     }
 
     fetchDados();
-
 }
 
