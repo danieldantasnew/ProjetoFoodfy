@@ -19,8 +19,8 @@
 
 .card-modal{
     display: block;
-    height: 600px;
-    width: 400px;
+    height: auto;
+    width: 360px;
     border-radius: 15px;
     position: relative;
     position: fixed;
@@ -28,7 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    
+    padding-bottom: 12px;
 }
 
 .close-modal img{
@@ -38,6 +38,7 @@
     background-color: white;
     border-radius: 50%;
     cursor: pointer;
+    height: 32px;
 }
 
 .design-imagem-card-modal{
@@ -52,6 +53,7 @@
 .card_titulo-modal{
     text-align: center;
     margin-top: 12px;
+    font-size: 1rem;
 }
 
 .ingredientes-titulo{
@@ -79,4 +81,28 @@
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--padrao-light);
+}
+
+@media (max-width: 410px){
+    
+    .card-modal{
+        width: 260px;
+    }
+
+    .card_titulo-modal{
+        font-size: 0.7rem;
+    }
+
+    .design-imagem-card-modal{
+        width: 100%;
+        height: 160px;
+    }
+
+    .ver-mais a{
+        font-size: 0.9rem;
+    }
+
+    .close-modal img{
+        height: 28px;
+    }
 }
