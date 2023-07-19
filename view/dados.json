@@ -18,7 +18,7 @@
         "titulo": "Espaguete ao alho",
         "autor": "por Júlia Kinoto",
         "ingredientes": "<ul class='ingredientes'><li>200g de espaguete</li><li>2 colheres de sopa azeite de oliva</li><li>2 dentes de alho picados</li>",
-        "modoPreparo": "<p><ul class='ingredientes'><li>200g de espaguete</li><li>2 colheres de sopa azeite de oliva</li><li>2 dentes de alho picados</li></p>"
+        "modoPreparo": "<p>Numa frigideira coloque o óleo e o alho. Frite até dourar levemente. Acrescente o macarrão já cozido conforme as instruções da embalagem e mexa por alguns minutos. E está pronto.</p>"
     },
     {
         "srcImagem": "../Imagens/lasanha.png",
@@ -60,7 +60,7 @@
         "titulo": "Espaguete ao alho",
         "autor": "por Júlia Kinoto",
         "ingredientes": "<ul class='ingredientes'><li>200g de espaguete</li><li>2 colheres de sopa azeite de oliva</li><li>2 dentes de alho picados</li>",
-        "modoPreparo": "<p><ul class='ingredientes'><li>200g de espaguete</li><li>2 colheres de sopa azeite de oliva</li><li>2 dentes de alho picados</li></p>"
+        "modoPreparo": "<p>Numa frigideira coloque o óleo e o alho. Frite até dourar levemente. Acrescente o macarrão já cozido conforme as instruções da embalagem e mexa por alguns minutos. E está pronto.</p>"
     },
     {
         "srcImagem": "../Imagens/lasanha.png",

@@ -1,10 +1,11 @@
-let informacoesCard = {}
+let informacoesCard = {};
 
 export async function fetchDados(){
     try{
         const dados = await fetch('./dados.json');
         const dadosJson = await dados.json();
-        informacoesCard = dadosJson
+        informacoesCard = dadosJson;
+        localStorage.informacoesCard = JSON.stringify(informacoesCard); /*converto JSON para string*/
     }
     catch(erro){
         console.log(erro)
@@ -20,14 +21,8 @@ export function recebeDados(index){
 
 
     imagemModal.id = informacoesCard[index].srcImagem;
-    imagemModal.classList.add('design-imagem-card-modal')
+    imagemModal.classList.add('design-imagem-card-modal');
     modalTitulo.innerText = informacoesCard[index].titulo;
     nomeAutorModal.innerText = informacoesCard[index].autor;
     ingredientes.innerHTML = informacoesCard[index].ingredientes;
-
-} 
-
-export function dadosReceitaUnica(){
-    
-    
 }

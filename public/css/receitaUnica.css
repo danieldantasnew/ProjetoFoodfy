@@ -1,45 +1,36 @@
 /* PAGINA DE RECEITA CLICÁVEL*/
 
-.ham{
-    margin: 30px 10px;
-    color: var(--textos);
+.tela-receita-unica{
+    max-width: 960px;
+    height: auto;
+    margin: 0px 10px 0px 20px;
 }
-.ham img{
+
+.card_imagem-receitaU{
     width: 100%;
-    height: 280px;
+    height: 300px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.info_card{
-    font-size: 1.5em;
-    text-align: center;
-    margin-top: 8vh;
+.card_titulo-receitaU h1{
+    font-size: 1.4rem;
 }
 
-.textos_receitaUnica{
-    margin: 10px;
+.card_autor-receitaU p{
+    font-size: 1rem;
 }
 
-.textos_receitaUnica h2{
-    font-size: 2em;
+.ingredientes-titulo-receita{
+
 }
 
-.textos_receitaUnica p{
-    margin: 20px 0;
-    text-align: justify;
-    color: var(--textos);
+.ingredientes-receita{
+
 }
 
-#unico{
-    margin: 10px;
-}
+.modo-preparo{
 
-.lista_ingredientes{
-    font-size: 1.1em;
-    margin-left: 30px;
-}
-
-.lista_ingredientes li{
-    padding: 6px 0;
-    text-align: justify;
-    color: var(--textos);
 }

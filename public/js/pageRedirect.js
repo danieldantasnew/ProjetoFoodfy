@@ -9,12 +9,15 @@ export default function redirecionaPagina(){
         function hearClick(){
             const cards = document.querySelectorAll('.card');
             
-            cards.forEach(card =>{
-                card.addEventListener('click', redirecione);
+            cards.forEach((card, index) =>{
+                card.addEventListener('click', ()=>{
+                    redirecione(index);
+                });
             });
 
-            function redirecione(){
-                window.location.href = 'receitaUnica.html'
+            function redirecione(index){
+                localStorage.index = index;
+                window.location.href = 'receitaUnica.html';
             }
 
             desconectar.disconnect();

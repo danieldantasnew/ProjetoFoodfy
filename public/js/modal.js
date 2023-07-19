@@ -34,9 +34,10 @@ export default function modalAction(){
         
             function handleCard(index){
                 modal.classList.add('active');
-                fetch.recebeDados(index)
+                localStorage.index = index;
+                fetch.recebeDados(index);
             }
-        
+      
             function closeModalFunction(event){
                 if(event.target == modal || event.target == closeModal){
                     modal.classList.remove('active');
