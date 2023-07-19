@@ -4,6 +4,7 @@
     max-width: 960px;
     height: auto;
     margin: 0px 10px 0px 20px;
+    text-align: center;
 }
 
 .card_imagem-receitaU{
@@ -13,24 +14,49 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 24px;
 }
 
 .card_titulo-receitaU h1{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 .card_autor-receitaU p{
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .ingredientes-titulo-receita{
-
+    margin-top: 1.8rem;
 }
 
-.ingredientes-receita{
-
+.ingredientes-receita ul{
+    text-align: center;
 }
 
-.modo-preparo{
+.ingredientes-receita li{
+    font-size: 1.1rem;
+}
 
+.modo-preparo p{
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 375px) {
+    .card_titulo-receitaU h1{
+        font-size: 1.4rem;
+    }
+    
+    .card_autor-receitaU p{
+        font-size: 0.9rem;
+    }
+    
+    .ingredientes-receita li{
+        font-size: 1rem;
+    }
+    
+    .modo-preparo p{
+        font-size: 1rem;
+    }
 }
