@@ -23,9 +23,9 @@ export default function modalAction(){
 
             cards.forEach((card, index) =>{
 
-                window.onresize = ()=>{
+                window.addEventListener('resize', ()=>{
                     tamanhoTelaDispositivos();
-                }
+                });
                 
     
                 function tamanhoTelaDispositivos(){

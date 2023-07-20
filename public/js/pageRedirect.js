@@ -13,6 +13,10 @@ export default function redirecionaPagina(){
 
 
             cards.forEach((card, index) =>{
+
+                window.addEventListener('resize', ()=>{
+                    tamanhoTelaDispositivos();
+                });
     
                 function tamanhoTelaDispositivos(){
                     const tamanhoTela = window.matchMedia('(max-width: 600px)').matches;
