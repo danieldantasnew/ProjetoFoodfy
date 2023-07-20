@@ -20,22 +20,25 @@ export default function modalAction(){
         
             // Identificará o clique longo
             let timeOut;
-            const eventos = ['touchstart','mousedown'];
-            const eventosFim = ['touchend','mouseup'];
 
-            eventos.forEach((evento, index) =>{
-                cards.forEach((card, index) =>{
-                    card.addEventListener(evento, ()=>{
-                        timeOut = setTimeout(()=>{
-                            handleCard(index); 
-                        }, 1000);     
-                    });
-                    
-                    card.addEventListener(eventosFim[index], ()=>{
-                        clearTimeout(timeOut);
-                    });
+            cards.forEach((card, index) =>{
+
+                const hammer = new Hammer(card);
+                hammer.on("press", ()=>{
+                    handleCard(index)
                 });
-            })
+
+                card.addEventListener('mousedown', ()=>{
+                    timeOut = setTimeout(()=>{
+                        handleCard(index); 
+                    }, 1000);     
+                });
+
+                    
+                card.addEventListener('mouseup', ()=>{
+                    clearTimeout(timeOut);
+                });
+            });
 
         
             function handleCard(index){

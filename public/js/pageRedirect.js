@@ -2,21 +2,43 @@ import observadorAction from './observador.js'
 
 export default function redirecionaPagina(){
     const cardsFather = document.querySelector('[data-card]');
+    
 
     if(cardsFather){
         const desconectar = observadorAction(hearClick, cardsFather);
 
         function hearClick(){
             const cards = document.querySelectorAll('.card');
-            const events = ['click', 'touchstart'];
+            
 
-            events.forEach(evento =>{
-                cards.forEach((card, index) =>{
-                    card.addEventListener(evento, ()=>{
-                        redirecione(index);
-                    });
-                });
-            })
+
+            cards.forEach((card, index) =>{
+                
+                window.onresize = ()=>{
+                    tamanhoTelaDispositivos();
+                }
+                
+    
+                function tamanhoTelaDispositivos(){
+                    const tamanhoTela = window.matchMedia('(max-width: 600px)').matches;
+
+                    
+                    if(tamanhoTela){
+                        const hammer = new Hammer(card);
+                        hammer.on("press", ()=>{
+                            redirecione(index);
+                        });
+                    }
+    
+                    else{
+                        card.addEventListener('click', ()=>{
+                            redirecione(index);
+                        });
+                    }
+                }
+
+                tamanhoTelaDispositivos()
+            });
 
             function redirecione(index){
                 localStorage.index = index;
