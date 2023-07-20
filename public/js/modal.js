@@ -20,17 +20,23 @@ export default function modalAction(){
         
             // Identificará o clique longo
             let timeOut;
-            cards.forEach((card, index) =>{
-                card.addEventListener('mousedown', ()=>{
-                    timeOut = setTimeout(()=>{
-                        handleCard(index); 
-                    }, 1000);     
+            const eventos = ['touchstart','mousedown'];
+            const eventosFim = ['touchend','mouseup'];
+
+            eventos.forEach((evento, index) =>{
+                cards.forEach((card, index) =>{
+                    card.addEventListener(evento, ()=>{
+                        timeOut = setTimeout(()=>{
+                            handleCard(index); 
+                        }, 1000);     
+                    });
+                    
+                    card.addEventListener(eventosFim[index], ()=>{
+                        clearTimeout(timeOut);
+                    });
                 });
-                
-                card.addEventListener('mouseup', ()=>{
-                    clearTimeout(timeOut);
-                });
-            });
+            })
+
         
             function handleCard(index){
                 modal.classList.add('active');

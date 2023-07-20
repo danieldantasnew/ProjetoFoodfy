@@ -8,12 +8,15 @@ export default function redirecionaPagina(){
 
         function hearClick(){
             const cards = document.querySelectorAll('.card');
-            
-            cards.forEach((card, index) =>{
-                card.addEventListener('click', ()=>{
-                    redirecione(index);
+            const events = ['click', 'touchstart'];
+
+            events.forEach(evento =>{
+                cards.forEach((card, index) =>{
+                    card.addEventListener(evento, ()=>{
+                        redirecione(index);
+                    });
                 });
-            });
+            })
 
             function redirecione(index){
                 localStorage.index = index;
