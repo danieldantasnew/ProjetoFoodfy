@@ -25,7 +25,7 @@ export default function redirecionaPagina(){
                     
                     if(tamanhoTela){
                         const hammer = new Hammer(card);
-                        hammer.on("press", ()=>{
+                        hammer.on("tap", ()=>{
                             redirecione(index);
                         });
                     }
