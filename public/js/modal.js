@@ -23,21 +23,37 @@ export default function modalAction(){
 
             cards.forEach((card, index) =>{
 
-                const hammer = new Hammer(card);
-                hammer.on("press", ()=>{
-                    handleCard(index)
-                });
-
-                card.addEventListener('mousedown', ()=>{
-                    timeOut = setTimeout(()=>{
-                        handleCard(index); 
-                    }, 1000);     
-                });
-
+                window.onresize = ()=>{
+                    tamanhoTelaDispositivos();
+                }
+                
+    
+                function tamanhoTelaDispositivos(){
+                    const tamanhoTela = window.matchMedia('(max-width: 600px)').matches;
                     
-                card.addEventListener('mouseup', ()=>{
-                    clearTimeout(timeOut);
-                });
+                    if(tamanhoTela){
+                        const hammer = new Hammer(card);
+                        hammer.on("press", ()=>{
+                            handleCard(index)
+                        });
+                    }
+    
+                    else{
+                        card.addEventListener('mousedown', ()=>{
+                            timeOut = setTimeout(()=>{
+                                handleCard(index); 
+                            }, 1000);     
+                        });
+
+                        card.addEventListener('mouseup', ()=>{
+                            clearTimeout(timeOut);
+                        });
+        
+                    }
+                }
+
+                tamanhoTelaDispositivos();  
+
             });
 
         
