@@ -38,9 +38,9 @@
 
 /* BOTAO MENU */
 
-.modal-header{
+/* .modal-header{
     display: none;
-}
+} */
 
 #btn-menu{
     display: none;
@@ -134,7 +134,7 @@
 
     /* >>>>>  MENU <<<<<*/
     
-    .modal-header.active{
+    /* .modal-header.active{
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -145,7 +145,7 @@
         top: -20px;
         left: 0;
         z-index: 1000;
-    }
+    } */
 
     #btn-menu{
         display: flex;
@@ -187,26 +187,33 @@
 
     #lista #menu{
         display: block;
-        position: fixed;
+        position: absolute;
         right: 0px;
         top: 70px;
-        width: 60%;
-        height: 100%;
+        width: 0;
         background-color: white;
         z-index: 2000;
         visibility: hidden;
         overflow-y: hidden;
+        transition: .3s;
     }
 
     #lista.active #menu{
-        height: calc(100vh - 70px);
+        transition: .3s;
+        height: auto;
         visibility: visible;
         overflow: auto;
+        width: 40%;
     }
 
     #menu > li{
         margin: 10px 20px;
         padding: 1rem 0;
+        border-bottom: 1px solid var(--padrao-dark);
+    }
+
+    #menu li:nth-child(4){
+        border-bottom: none;
     }
 
     #menu > li > a{
