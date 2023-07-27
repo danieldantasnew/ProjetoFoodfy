@@ -138,6 +138,7 @@ Desafio atualizado para ser utilizado em um projeto da faculdade, adicionando re
 <!-- RECEITA ÚNICA -->
 
 <!-- <main>
+
     <div class="ham">
         <div class="card_imagem">
             <img src="../Imagens/burger.png" alt="triplo bacon burger">
@@ -188,3 +189,6 @@ Desafio atualizado para ser utilizado em um projeto da faculdade, adicionando re
         <p>Outro sabor predominante desse lanche vem do Bacon fatias double smoked Seara Gourmet. Além de ser feito 100% a partir de paleta suína, esse bacon fatiado é duplamente defumado e possui a proporção ideal entre carne e gordura. Suas fatias redondas e mais grossas são ideais para complementar sanduíches como esse e outros que já apareceram aqui no Minha Receita, como o Hambúrguer Angus com Fatias Redondas de Bacon e o Duplo Burger Bacon com Picles de Cebola Roxa, Queijo Cheddar no Pão de Pimenta Biquinho.</p>
     </div>
 </main> -->
+
+
+Falta fazer a pesquisar, o modo Dark, melhorar o menu e fazer o History

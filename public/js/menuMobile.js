@@ -1,5 +1,2 @@
-export default function layoutMenu(){
-    
-    
-
+export default function layoutMenu() {
 }
