@@ -1,60 +1,65 @@
-export default function cards() {
-  // eslint-disable-next-line no-shadow
-  const cards = document.querySelector('[data-card]');
+export default class Cards {
 
-  if (cards) {
-    // eslint-disable-next-line no-inner-declarations
-    function createCard(srcImagem) {
-      //cria div
-      const card = document.createElement('div');
-      card.classList.add('card');
-      card.dataset.card = 'card';
-      //cria div para inserir a imagem
+  constructor(card){
+    this.cards = document.querySelector(card);
+  }
+  
 
-      const cardImagem = document.createElement('div');
-      cardImagem.classList.add('card_imagem');
-      card.appendChild(cardImagem);
+  createCard(srcImagem) {
+    //cria div
+    const card = document.createElement('div');
+    card.classList.add('card');
+    card.dataset.card = 'card';
+    //cria div para inserir a imagem
 
-      //cria a tag img para inserir a imagem
+    const cardImagem = document.createElement('div');
+    cardImagem.classList.add('card_imagem');
+    card.appendChild(cardImagem);
 
-      const imagem = document.createElement('div');
-      cardImagem.appendChild(imagem);
-      imagem.id = srcImagem;
-      imagem.classList.add('design-imagem-card');
+    //cria a tag img para inserir a imagem
 
-      //cria a div para inserir as informações
+    const imagem = document.createElement('div');
+    cardImagem.appendChild(imagem);
+    imagem.id = srcImagem;
+    imagem.classList.add('design-imagem-card');
 
-      const divInfoCard = document.createElement('div');
-      card.appendChild(divInfoCard);
-      divInfoCard.classList.add('card_titulo');
+    //cria a div para inserir as informações
 
-      //cria o h1 para inserir dentro do titulo
+    const divInfoCard = document.createElement('div');
+    card.appendChild(divInfoCard);
+    divInfoCard.classList.add('card_titulo');
 
-      const h1 = document.createElement('h1');
-      divInfoCard.appendChild(h1);
+    //cria o h1 para inserir dentro do titulo
 
-      //cria div card_autor
+    const h1 = document.createElement('h1');
+    divInfoCard.appendChild(h1);
 
-      const cardAutor = document.createElement('div');
-      cardAutor.classList.add('card_autor');
-      divInfoCard.appendChild(cardAutor);
-      //cria o p para inserir dentro do autor
-      const p = document.createElement('p');
-      cardAutor.appendChild(p);
+    //cria div card_autor
 
-      return card;
-    }
+    const cardAutor = document.createElement('div');
+    cardAutor.classList.add('card_autor');
+    divInfoCard.appendChild(cardAutor);
+    //cria o p para inserir dentro do autor
+    const p = document.createElement('p');
+    cardAutor.appendChild(p);
 
-    // eslint-disable-next-line no-inner-declarations
-    async function fetchDados() {
+    return card;
+  }
+
+  adicionaCard(card) {
+    this.cards.appendChild(card);
+    return this;
+  }
+
+  fetchDados(){
+    async function fetchDadosFuncao() {
       const dados = await fetch('./dados.json');
       const dadosJson = await dados.json();
-
+  
       try {
         dadosJson.forEach((dado, index) => {
-          const card = createCard(dado.srcImagem);
-          // eslint-disable-next-line no-use-before-define
-          adicionaCard(card);
+          const card = this.createCard(dado.srcImagem);
+          this.adicionaCard(card);
           const titulo = document.querySelectorAll('.card_titulo h1');
           const autor = document.querySelectorAll('.card_autor p');
           titulo[index].innerText = dado.titulo;
@@ -65,10 +70,16 @@ export default function cards() {
       }
     }
 
-    // eslint-disable-next-line no-inner-declarations
-    function adicionaCard(card) {
-      cards.appendChild(card);
+    fetchDadosFuncao.bind(this)();
+    return this;
+  }
+  
+
+  init() {
+    if (this.cards) {
+      this.fetchDados();
     }
-    fetchDados();
+    return this;
   }
 }
+
