@@ -1,29 +1,41 @@
-export default function buttonMenu() {
-  const lista = document.querySelector('[data-menu="lista"]');
-  const botaoMenu = document.querySelector('[data-menu="btn-menu"]');
-
-  function alteraMenu(event) {
-    lista.classList.toggle('active');
-    // eslint-disable-next-line no-use-before-define
-    bubblingHTML(active, event.currentTarget.parentElement);
-    function active() {
-      lista.classList.toggle('active');
-    }
+export default class Menu {
+  constructor(lista, botaoMenu) {
+    this.lista = document.querySelector(lista);
+    this.botaoMenu = document.querySelector(botaoMenu);
+    this.alteraMenu = this.alteraMenu.bind(this);
+    this.active = this.active.bind(this);
   }
 
-  function bubblingHTML(funcaoAtive, eventoTarget) {
+  bubblingHTML(eventoTarget) {
     const html = document.documentElement;
-
-    // eslint-disable-next-line no-use-before-define
     html.addEventListener('click', verificaTarget);
+    const activeGambiarra = this.active;
 
     function verificaTarget(eventHTML) {
       if (!eventoTarget.contains(eventHTML.target)) {
-        funcaoAtive();
         html.removeEventListener('click', verificaTarget);
+        activeGambiarra();
       }
     }
+    return this;
   }
 
-  botaoMenu.addEventListener('click', alteraMenu);
+  active() {
+    this.lista.classList.toggle('active');
+    return this;
+  }
+
+  alteraMenu(event) {
+    this.lista.classList.toggle('active');
+    if (this.lista.classList.contains('active')) {
+      this.bubblingHTML(event.currentTarget.parentElement);
+    }
+
+    return this;
+  }
+
+  init() {
+    this.botaoMenu.addEventListener('click', this.alteraMenu);
+    return this;
+  }
 }
