@@ -52,7 +52,7 @@ export default class Cards {
   }
 
   fetchDados(){
-    async function fetchDadosFuncao() {
+     const fetchDadosFuncao = async () => {
       const dados = await fetch('./dados.json');
       const dadosJson = await dados.json();
   
@@ -70,7 +70,7 @@ export default class Cards {
       }
     }
 
-    fetchDadosFuncao.bind(this)();
+    fetchDadosFuncao();
     return this;
   }
   
