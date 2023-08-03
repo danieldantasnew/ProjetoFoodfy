@@ -1,9 +1,8 @@
+/* eslint-disable class-methods-use-this */
 export default class Cards {
-
-  constructor(card){
+  constructor(card) {
     this.cards = document.querySelector(card);
   }
-  
 
   createCard(srcImagem) {
     //cria div
@@ -51,11 +50,10 @@ export default class Cards {
     return this;
   }
 
-  fetchDados(){
-     const fetchDadosFuncao = async () => {
+  fetchDados() {
+    const fetchDadosFuncao = async () => {
       const dados = await fetch('./dados.json');
       const dadosJson = await dados.json();
-  
       try {
         dadosJson.forEach((dado, index) => {
           const card = this.createCard(dado.srcImagem);
@@ -68,12 +66,10 @@ export default class Cards {
       } catch (error) {
         console.log(error);
       }
-    }
-
+    };
     fetchDadosFuncao();
     return this;
   }
-  
 
   init() {
     if (this.cards) {
@@ -82,4 +78,3 @@ export default class Cards {
     return this;
   }
 }
-

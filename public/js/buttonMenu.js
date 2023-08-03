@@ -8,6 +8,7 @@ export default class Menu {
 
   bubblingHTML(eventoTarget) {
     const html = document.documentElement;
+    // eslint-disable-next-line no-use-before-define
     html.addEventListener('click', verificaTarget);
     const activeGambiarra = this.active;
 
