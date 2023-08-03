@@ -12,18 +12,21 @@ export default class Modal {
     this.activeModal = this.activeModal.bind(this);
     this.closeModalFunction = this.closeModalFunction.bind(this);
     this.tamanhoTelaDispositivos = this.tamanhoTelaDispositivos.bind(this);
+    return this;
   }
 
   closeModalFunction(event, modal, closeModal) {
     if (event.target === modal || event.target === closeModal) {
       modal.classList.remove('active');
     }
+    return this;
   }
 
   handleCard(index, modal) {
     modal.classList.add('active');
     localStorage.index = index;
     fetch.recebeDados(index);
+    return this;
   }
 
   tamanhoTelaDispositivos(card, index, timeOut, modal) {
@@ -48,6 +51,7 @@ export default class Modal {
         clearTimeout(timeOut);
       });
     }
+    return this;
   }
 
   resizeTela(cards, modal) {
@@ -59,7 +63,9 @@ export default class Modal {
         //criar função debounce
       });
       this.tamanhoTelaDispositivos(card, index, timeOut, modal);
+      //criar função debounce
     });
+    return this;
   }
 
   activeModal() {
