@@ -29,7 +29,8 @@ export default function redirecionaPagina() {
             });
           }
         }
-
+        //remover funcao tamanhoTeladispositivos pois é possível fazer com touchstart e click
+        //precisa apenas passar o event.preventDefault() qnd for passar os 2 eventos
         tamanhoTelaDispositivos();
       });
 
