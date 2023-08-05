@@ -9,21 +9,17 @@ export default class RedirecionaPagina {
     this.hearClick = this.hearClick.bind(this);
   }
 
-  redirecione(index, eventClick) {
-    eventClick.preventDefault();
+  redirecione(index) {
     localStorage.index = index;
     window.location.href = 'receitaUnica.html';
   }
 
   hearClick() {
     const cards = document.querySelectorAll('.card');
-    const events = ['click', 'touchstart'];
 
     cards.forEach((card, index) => {
-      events.forEach((evento) => {
-        card.addEventListener(evento, (eventClick) => {
-          this.redirecione(index, eventClick);
-        });
+      card.addEventListener('click', () => {
+        this.redirecione(index);
       });
     });
     this.desconectar.disconnect();
