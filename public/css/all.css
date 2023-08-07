@@ -46,6 +46,8 @@
     --bordas: var(--bordas-light);
     --inverte: var(--inverte-light);
     --hover: var(--hover-light);
+    --padrao-menu-mobile: white;
+    --padrao-card: rgba(0, 0, 0, .09);
 }
 
 .tema-escuro{
@@ -54,6 +56,8 @@
     --bordas: var(--bordas-dark);
     --inverte: var(--inverte-dark);
     --hover: var(--hover-dark);
+    --padrao-menu-mobile: var(--corpo-dark);
+    --padrao-card: rgba(255, 255, 255, 0.09);
 }
 
 body{

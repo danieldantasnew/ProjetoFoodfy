@@ -150,7 +150,7 @@
     #btn-menu{
         display: flex;
         gap: 5px;
-        background: var(--corpo);
+        background: var(--planodefundo);
     }
 
     #hamburguer{
@@ -191,7 +191,7 @@
         right: 0px;
         top: 70px;
         width: 0;
-        background-color: white;
+        background-color: var(--padrao-menu-mobile);
         z-index: 2000;
         visibility: hidden;
         overflow-y: hidden;
@@ -218,7 +218,7 @@
 
     #menu > li > a{
         font-size: 1.3em;
-        color: var(--padrao-dark);
+        color: var(--textos) !important;
         position: relative;
     }
 

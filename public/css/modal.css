@@ -24,7 +24,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: var(--padrao-menu-mobile);
+    color: var(--textos);
     padding-bottom: 12px;
 }
 
@@ -32,7 +33,7 @@
     position: absolute;
     top: -8px;
     right: -4px;
-    background-color: white;
+    background-color: var(--padrao-menu-mobile);
     border-radius: 50%;
     cursor: pointer;
     height: 32px;

@@ -1,6 +1,7 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-use-before-define */
 import observadorAction from './observador.js';
+import debounce from './debounce.js';
 import * as fetch from './fetch.js';
 
 export default class Modal {
@@ -59,11 +60,9 @@ export default class Modal {
 
     cards.forEach((card, index) => {
       window.addEventListener('resize', () => {
-        this.tamanhoTelaDispositivos(card, index, timeOut, modal);
-        //criar função debounce
+        debounce(this.tamanhoTelaDispositivos(card, index, timeOut, modal), 1000);
       });
       this.tamanhoTelaDispositivos(card, index, timeOut, modal);
-      //criar função debounce
     });
     return this;
   }
