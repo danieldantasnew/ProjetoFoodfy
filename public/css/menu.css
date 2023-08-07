@@ -227,7 +227,7 @@
 @media (min-width: 1001px){
     #menu > li > a{
         font-size: 1.3em;
-        color: var(--padrao-dark);
+        color: var(--textos) !important;
         position: relative;
     }
 
@@ -239,6 +239,10 @@
         left: 0;
         bottom: -3px;
         background-color: var(--padrao-dark);
+    }
+
+    #lista > #menu > li > a:hover{
+        color: var(--padrao-dark) !important;
     }
 
     #lista > #menu > li > a:hover::after{
