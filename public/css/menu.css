@@ -1,20 +1,72 @@
+#lista{
+    position: relative;
+}
+
 #lista > #menu{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
 }
 
 #lista > #menu > li > a{
-    padding: 10px;
-    font-size: 1.2em;
-    color: var(--letras-light);
+    padding-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 #lista > #menu > li > a:hover{
     color: var(--hover-light);
     transition: 200ms;
     font-weight: bold;
+}
+
+#menu li{
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--textos);
+}
+
+[data-lista-maisInfo="mais"]:hover{
+    color: var(--padrao-dark) !important;
+    font-weight: 700;
+}
+
+.organiza-mais-opc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.arrow{
+    background-image: url(../../Imagens/icon-arrow-down.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 14px; 
+    
+}
+
+.arrow.active{
+    transition: transform .5s;
+    transform: rotate(-180deg);
+}
+
+[data-lista-maisInfo="lista"]{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: var(--padrao-menu-mobile);
+    z-index: 2000;
+    overflow: hidden;
+}
+
+[data-lista-maisInfo="lista"].active{
+    display: block;
 }
 
 #links{
@@ -37,10 +89,6 @@
 }
 
 /* BOTAO MENU */
-
-/* .modal-header{
-    display: none;
-} */
 
 #btn-menu{
     display: none;
@@ -103,6 +151,9 @@
 }
 
 @media (max-width: 1000px){
+    #lista{
+        position: static;
+    }
 
     #links{
         display: grid;
@@ -132,21 +183,13 @@
         justify-self: flex-end;
     }
 
-    /* >>>>>  MENU <<<<<*/
+    [data-lista-maisInfo="lista"].active{
+        opacity: 1;
+        display: block;
+        position: static;
+        background-color: var(--padrao-menu-mobile);
+    }
     
-    /* .modal-header.active{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-        height: calc(100% + 20px);
-        background-color: rgba(0, 0, 0, 0.281);
-        position: absolute;
-        top: -20px;
-        left: 0;
-        z-index: 1000;
-    } */
-
     #btn-menu{
         display: flex;
         gap: 5px;
@@ -207,6 +250,7 @@
     }
 
     #menu > li{
+        font-size: 1.3rem;
         margin: 10px 20px;
         padding: 1rem 0;
         border-bottom: 1px solid var(--padrao-dark);
@@ -216,7 +260,7 @@
         border-bottom: none;
     }
 
-    #menu > li > a{
+    #menu  li  a{
         font-size: 1.3em;
         color: var(--textos) !important;
         position: relative;
@@ -225,8 +269,11 @@
 }
 
 @media (min-width: 1001px){
-    #menu > li > a{
+
+    #menu li{
         font-size: 1.3em;
+    }
+    #menu > li > a{
         color: var(--textos) !important;
         position: relative;
     }

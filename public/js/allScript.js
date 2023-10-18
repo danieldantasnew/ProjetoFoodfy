@@ -6,6 +6,7 @@ import RedirecionaPagina from './pageRedirect.js';
 import darkTheme from './darkTheme.js';
 import receitaUnica from './receitaUnica.js';
 import menuMobile from './menuMobile.js';
+import menuOPC from './maisOpcMenu.js';
 
 const menu = new Menu('[data-menu="lista"]', '[data-menu="btn-menu"]');
 menu.init();
@@ -23,4 +24,5 @@ fetch.fetchDados();
 darkTheme();
 receitaUnica();
 menuMobile();
+menuOPC();
 /* --------------------------------------------------------------------*/
