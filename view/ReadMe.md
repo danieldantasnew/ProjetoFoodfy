@@ -191,4 +191,4 @@ Desafio atualizado para ser utilizado em um projeto da faculdade, adicionando re
 </main> -->
 
 
-Falta fazer a pesquisar, o modo Dark, melhorar o menu e fazer o History
+Falta fazer a pesquisar, o modo Dark, melhorar o menu e fazer o History, criar o sugestões da semana ou dia (grid com slides).
