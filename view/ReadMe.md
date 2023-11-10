@@ -191,6 +191,7 @@ Desafio atualizado para ser utilizado em um projeto da faculdade, adicionando re
 </main> -->
 
 
+<<<<<<< HEAD
 Falta fazer a pesquisar, o modo Dark, melhorar o menu e fazer o History, criar o sugestões da semana ou dia (grid com slides).
 
 
@@ -198,3 +199,6 @@ Novas fontes:
 Títulos: K2D
 Parágrafos: Rubik
  
+=======
+Falta fazer a pesquisar, o modo Dark, melhorar o menu e fazer o History, criar o sugestões da semana ou dia (grid com slides). Colocar scroll driven na página com rolamento de página (mostrando o tanto que falta para acabar nesse estilo https://scroll-driven-animations.style/demos/progress-bar/css/
+>>>>>>> 9555445e0018f66c940bfb6b1846281e45153398
